@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sign In — SAFRA Play · Year of the Goat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="./assets/theme-DbFIwzDo.css">
+</head>
+<body>
+<div class="page">
+<div class="diptych">
+
+  <!-- art panel -->
+  <div class="diptych-art">
+    <img class="art-img" src="./assets/art-signin-panel-C7V9FHSD.jpg" alt="Paper-cut goat on a golden mountain under a cream sun, with lanterns and plum blossoms"/>
+  </div>
+
+  <!-- form panel -->
+  <div class="diptych-form">
+    <div class="form-box">
+      <p class="eyebrow">Welcome Back</p>
+      <h1 class="display h-lg" style="margin:14px 0 16px">Sign in once,<br/>then continue playing.</h1>
+      <p class="sub" style="font-size:15px;margin-bottom:28px">Protected campaign pages send players here. After the one-time code is verified, you&rsquo;ll return to the page you wanted.</p>
+
+      <div id="step-email">
+        <div class="field">
+          <label for="email">Enter Your Email</label>
+          <input type="email" id="email" placeholder="you@email.sg"/>
+          <p class="small" style="margin-top:8px">We will send a six-digit code to sign you in.</p>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" id="age"/>
+          <label for="age">I am 18 years or older / a minor at least 16.5 years old / a child below 16.5 (play only, no leaderboard or prizes)</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" id="pr"/>
+          <label for="pr">I hereby declare that I am a Singapore Citizen or Permanent Resident, and I agree with all T&amp;Cs and the Code of Conduct of the SAFRA Gamification Platform.</label>
+        </div>
+        <button class="btn btn-primary btn-block" data-send-code style="margin-top:10px">Send Code</button>
+      </div>
+
+      <div id="step-otp" style="display:none">
+        <div class="field">
+          <label>Enter the 6-digit code</label>
+          <div class="otp-row">
+            <input maxlength="1" inputmode="numeric"/><input maxlength="1" inputmode="numeric"/><input maxlength="1" inputmode="numeric"/>
+            <input maxlength="1" inputmode="numeric"/><input maxlength="1" inputmode="numeric"/><input maxlength="1" inputmode="numeric"/>
+          </div>
+          <p class="small">Sent to your email. The code expires in 10 minutes.</p>
+        </div>
+        <button class="btn btn-primary btn-block" data-verify style="margin-top:14px">Verify &amp; Continue</button>
+        <p class="small" style="margin-top:12px;text-align:center"><a class="link-arrow" href="signin.html">Use a different email</a></p>
+      </div>
+
+      <p class="small" style="margin-top:28px;text-align:center">
+        <a href="#" style="border-bottom:1px solid var(--hairline)">User Agreement</a>
+        &nbsp;/&nbsp;
+        <a href="#" style="border-bottom:1px solid var(--hairline)">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+
+</div>
+</div>
+<script src="assets/main.js"></script>
+</body>
+</html>

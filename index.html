@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Home — SAFRA Play · Year of the Goat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="./assets/theme-DbFIwzDo.css">
+</head>
+<body>
+<div class="page">
+
+<nav class="nav">
+  <a class="brand" href="index.html">
+    <svg class="seal"><use href="#seal-goat"/></svg>
+    <span>SAFRA PLAY<small>YEAR OF THE GOAT · 羊年大吉</small></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="campaigns.html">My Campaigns</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="profile.html">Profile</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+  <div class="nav-right"><a class="btn btn-primary" href="signin.html">Sign In</a></div>
+</nav>
+
+<!-- HERO: full-bleed artwork band from approved comp (text baked in); invisible hotspots keep CTAs clickable -->
+<div class="hero-band" role="img" aria-label="Happy Chinese New Year — Year of the Goat. Thank you, NSmen. Now it's game time. Sharpen your knowledge, take on challenges, climb the ranks.">
+  <h1 class="sr-only">Thank you, NSmen. Now it&rsquo;s game time.</h1>
+  <a class="hotspot" style="left:6.8%;top:79%;width:14.8%;height:11%" href="signin.html" aria-label="Play Now, It's Free"></a>
+  <a class="hotspot" style="left:23%;top:79%;width:14.1%;height:11%" href="#how" aria-label="See How It Works"></a>
+</div>
+
+<div class="wrap">
+
+  <!-- COUNTDOWN + PRIZE -->
+  <section style="padding-bottom:72px">
+    <div class="card count-strip" data-countdown="2027-02-06T09:00:00+08:00">
+      <div style="display:flex;align-items:center;gap:14px">
+        <svg width="40" height="40" viewBox="0 0 48 48"><use href="#blossom" style="color:#C13A2A"/></svg>
+        <div><strong class="display" style="font-size:19px">Campaign Ends In</strong><br/><span class="small">Standings final 0900 hrs, 6 Feb 2027</span></div>
+      </div>
+      <div class="count-tiles" style="justify-content:center">
+        <div class="count-tile"><div class="n" data-cd="d">29</div><div class="l">Days</div></div>
+        <div class="count-tile"><div class="n" data-cd="h">14</div><div class="l">Hours</div></div>
+        <div class="count-tile"><div class="n" data-cd="m">37</div><div class="l">Mins</div></div>
+        <div class="count-tile"><div class="n" data-cd="s">08</div><div class="l">Secs</div></div>
+      </div>
+      <div class="prize-card">
+        <div class="prize-icon">🏆</div>
+        <div style="flex:1">
+          <strong class="display" style="font-size:19px">iPhone 17 Pro</strong>
+          <p class="small">Top Prize — Leaderboard Champion</p>
+        </div>
+        <a class="btn btn-primary" href="signin.html">Join Now&nbsp;›</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how" style="padding-top:24px">
+    <div class="section-head" style="text-align:center">
+      <p class="eyebrow">Three Steps to the Peak</p>
+      <h2 class="display h-lg">How It Works</h2>
+    </div>
+    <div class="steps">
+      <div class="card step-card">
+        <div class="step-num">1</div>
+        <h3 class="display h-sm" style="margin-bottom:8px">Sign Up Free</h3>
+        <p class="sub" style="font-size:15px">Register with your email and verify with a one-time password.</p>
+      </div>
+      <div class="card step-card">
+        <div class="step-num">2</div>
+        <h3 class="display h-sm" style="margin-bottom:8px">Play &amp; Learn</h3>
+        <p class="sub" style="font-size:15px">Take on mini-games and quizzes inspired by NS and Singapore&rsquo;s defence.</p>
+      </div>
+      <div class="card step-card">
+        <div class="step-num">3</div>
+        <h3 class="display h-sm" style="margin-bottom:8px">Score &amp; Win</h3>
+        <p class="sub" style="font-size:15px">Score points, climb the leaderboard — Top 30 wins prizes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVE CAMPAIGNS PREVIEW -->
+  <section class="section" style="padding-top:24px">
+    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end">
+      <div>
+        <p class="eyebrow">Live Now</p>
+        <h2 class="display h-lg">Active Campaigns</h2>
+        <p class="sub" style="margin-top:8px">Join a live campaign, complete its mini-games, and build your campaign score.</p>
+      </div>
+      <a class="link-arrow" href="campaigns.html">View All →</a>
+    </div>
+    <div class="campaign-grid">
+      <a class="card campaign-card horizontal" href="campaign-join.html" data-state="active">
+        <div class="art">
+          <img src="./assets/art-campaign-featured-ClgV-0hn.jpg" alt="Goat climbing golden mountain steps"/>
+        </div>
+        <div class="body">
+          <span class="tag tag-red">Active · CNY Special</span>
+          <h3 class="display h-md">Prosperity Ascent Challenge</h3>
+          <div class="meta"><span class="mi"><svg width="13" height="13" viewBox="0 0 14 14"><rect x="1.2" y="2.6" width="11.6" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M1.2 6h11.6M4.6 1v3M9.4 1v3" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>Ends 31 Aug 2026</span>·<span class="mi"><svg width="14" height="13" viewBox="0 0 15 14"><rect x="1" y="3" width="13" height="8" rx="4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4.7 5.5v3M3.2 7h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="10.3" cy="6.2" r=".9" fill="currentColor"/><circle cx="12" cy="8" r=".9" fill="currentColor"/></svg>3 mini-games</span>·<span class="mi"><svg width="11" height="13" viewBox="0 0 11 14"><rect x="1" y="1" width="9" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4.4 10.8h2.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>iPhone 17 Pro top prize</span></div>
+          <div class="fc-progress">
+            <div class="progress-label" style="margin-bottom:6px">2,450 / 5,000 points</div>
+            <div class="progress-wrap"><div class="progress"><i style="width:49%"></i></div><span class="prog-badge gold">★</span></div>
+          </div>
+          <div class="fc-cta"><span class="btn btn-primary">Continue Playing&nbsp;›</span></div>
+        </div>
+      </a>
+      <a class="card campaign-card" href="campaign-join.html" data-state="active">
+        <div class="art">
+          <span class="tag tag-jade">Active</span>
+          <img src="./assets/art-campaign-trivia-KAGyzM5r.jpg" alt="Plum blossom branch"/>
+        </div>
+        <div class="body">
+          <h3 class="display h-sm">Lucky Trivia Trail</h3>
+          <div class="meta"><span class="mi"><svg width="13" height="13" viewBox="0 0 14 14"><rect x="1.2" y="2.6" width="11.6" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M1.2 6h11.6M4.6 1v3M9.4 1v3" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>Ends 15 Jul 2026</span>·<span class="mi"><svg width="14" height="13" viewBox="0 0 15 14"><rect x="1" y="3" width="13" height="8" rx="4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4.7 5.5v3M3.2 7h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="10.3" cy="6.2" r=".9" fill="currentColor"/><circle cx="12" cy="8" r=".9" fill="currentColor"/></svg>2 mini-games</span></div>
+          <div>
+            <div class="progress-label" style="margin-bottom:6px">1,280 / 3,000 points</div>
+            <div class="progress-wrap"><div class="progress jade"><i style="width:43%"></i></div><span class="prog-badge jade">+</span></div>
+          </div>
+          <div><span class="btn btn-jade btn-block" style="margin-top:4px">Play&nbsp;›</span></div>
+        </div>
+      </a>
+      <a class="card campaign-card ended" href="campaign-ended.html" data-state="ended">
+        <div class="art">
+          <span class="tag tag-grey">Ended</span>
+          <img src="./assets/art-campaign-ended-CDzQuqLQ.jpg" alt="Muted lanterns and pagoda"/>
+        </div>
+        <div class="body">
+          <h3 class="display h-sm">Spring Quiz Sprint</h3>
+          <div class="meta"><span class="mi"><svg width="13" height="13" viewBox="0 0 14 14"><rect x="1.2" y="2.6" width="11.6" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M1.2 6h11.6M4.6 1v3M9.4 1v3" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>Ended 30 Apr 2026</span>·<span class="mi"><svg width="14" height="13" viewBox="0 0 15 14"><rect x="1" y="3" width="13" height="8" rx="4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4.7 5.5v3M3.2 7h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="10.3" cy="6.2" r=".9" fill="currentColor"/><circle cx="12" cy="8" r=".9" fill="currentColor"/></svg>2 mini-games</span></div>
+          <div style="margin-top:auto"><span class="btn btn-ghost btn-block">View Results&nbsp;›</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- LEADERBOARD PREVIEW -->
+  <section class="section" id="leaderboard" style="padding-top:24px">
+    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+      <div>
+        <p class="eyebrow">Live Standings</p>
+        <h2 class="display h-lg">Leaderboard</h2>
+        <p class="sub" style="margin-top:8px">Live standings. Play mini-games to claim your spot!</p>
+      </div>
+      <select class="campaign-select" aria-label="Select campaign">
+        <option selected>Prosperity Ascent Challenge</option>
+        <option>Lucky Trivia Trail</option>
+      </select>
+    </div>
+    <div class="card" style="padding:28px 32px">
+      <div class="podium-mini">
+        <div class="pm-col second"><div class="pm-avatar">CT</div><strong class="display" style="font-size:16px">Cheryl T.</strong><span class="pts">11,905 pts</span><span class="rank-badge silver">2</span></div>
+        <div class="pm-col first"><div class="pm-avatar">WL</div><strong class="display" style="font-size:18px">Wei_Liang</strong><span class="pts">12,480 pts</span><span class="rank-badge gold">1</span></div>
+        <div class="pm-col third"><div class="pm-avatar">AR</div><strong class="display" style="font-size:16px">Ahmad R.</strong><span class="pts">11,340 pts</span><span class="rank-badge bronze">3</span></div>
+      </div>
+      <div class="table-card" style="margin-top:20px">
+        <div class="trow"><span class="rank">4</span><span><strong>Daniel Ng</strong></span><span class="pts">10,210 pts</span></div>
+        <div class="trow"><span class="rank">5</span><span><strong>Tan Mei Ling</strong></span><span class="pts">9,845 pts</span></div>
+        <div class="trow you"><span class="rank">6</span><span><strong>You</strong> <span class="tag tag-red" style="margin-left:8px">You</span></span><span class="pts">9,320 pts</span></div>
+        <div class="trow"><span class="rank">7</span><span><strong>Marcus Lee</strong></span><span class="pts">8,610 pts</span></div>
+        <div class="trow"><span class="rank">8</span><span><strong>Nurul A.</strong></span><span class="pts">8,050 pts</span></div>
+        <div class="trow"><span class="rank">9</span><span><strong>r***2@y***m</strong></span><span class="pts">7,920 pts</span></div>
+        <div class="trow"><span class="rank">10</span><span><strong>p***c@g***m</strong></span><span class="pts">7,700 pts</span></div>
+      </div>
+      <p style="margin-top:18px;text-align:right"><a class="link-arrow" href="leaderboard.html">Full Leaderboard →</a></p>
+    </div>
+  </section>
+
+  <!-- RACE TO THE TOP -->
+  <section class="section" id="challenge" style="padding-top:24px">
+    <div class="section-head" style="text-align:center">
+      <p class="eyebrow">Season Prizes</p>
+      <h2 class="display h-lg">Race to the Top</h2>
+      <p class="sub" style="margin-top:10px">The top players on the leaderboard at the close of the season each walk away with a $20 SAFRA voucher.</p>
+    </div>
+    <div class="race-grid">
+      <div class="card race-art card-lift">
+        <img src="./assets/art-empty-goat-Crd_DV_S.jpg" alt="Goat standing on a golden peak beneath lanterns"/>
+        <p class="small" style="margin-top:16px">Leaderboard standings are final at close. Tokens not redeemed within 30 days of issuance will expire. While stocks last.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="card" style="display:flex;gap:16px;align-items:flex-start;padding:22px 26px">
+          <span class="num" style="font-size:26px">1</span>
+          <div><h3 class="display h-sm" style="margin-bottom:6px">Finish in the top</h3><p class="small">Standings are final at 0900 hrs, 31 Aug 2026.</p></div>
+        </div>
+        <div class="card" style="display:flex;gap:16px;align-items:flex-start;padding:22px 26px">
+          <span class="num" style="font-size:26px">2</span>
+          <div><h3 class="display h-sm" style="margin-bottom:6px">Token in your Prize Wallet</h3><p class="small">Winners receive a prize token in-platform.</p></div>
+        </div>
+        <div class="card" style="display:flex;gap:16px;align-items:flex-start;padding:22px 26px">
+          <span class="num" style="font-size:26px">3</span>
+          <div><h3 class="display h-sm" style="margin-bottom:6px">Redeem at Mount Faber</h3><p class="small">Present the token at SAFRA Mount Faber within 30 days of issuance.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PREVIEW -->
+  <section class="section" style="padding-top:24px">
+    <div class="section-head" style="text-align:center">
+      <p class="eyebrow">Good to Know</p>
+      <h2 class="display h-lg">FAQ</h2>
+      <p class="sub" style="margin-top:8px">Everything you need to know about SAFRA Play</p>
+    </div>
+    <div class="card" style="padding:12px 32px;max-width:820px;margin:0 auto">
+      <div class="acc-item">
+        <button class="acc-q"><span class="tag tag-gold">Price</span><span class="txt">Is it free to play?</span><span class="pm">+</span></button>
+        <div class="acc-a">Yes. SAFRA Play is completely free — no app download, no purchase required.</div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q"><span class="tag tag-jade">Who</span><span class="txt">Who can play?</span><span class="pm">+</span></button>
+        <div class="acc-a">SAFRA Play is open to individuals in Singapore. If you are under 18, you may participate with the involvement of a parent or legal guardian who agrees to the User Agreement on your behalf. Players who are younger than 16.5 years are not eligible to be listed on the leaderboard and are not eligible for prizes.</div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q"><span class="tag tag-red">Prize</span><span class="txt">How do I claim my prize?</span><span class="pm">+</span></button>
+        <div class="acc-a">Winners receive a prize token in their Prize Wallet — present it at SAFRA Mount Faber within 30 days of issuance.</div>
+      </div>
+      <p style="padding:14px 0 10px;text-align:center"><a class="link-arrow" href="faq.html">View All FAQs →</a></p>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section" style="padding-top:8px">
+    <div class="cta-banner">
+      <svg class="clouds" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid slice">
+        <use href="#cloud" x="60" y="120" width="140" height="66" fill="#FFF4E4"/>
+        <use href="#cloud" x="980" y="20" width="160" height="75" fill="#FFF4E4"/>
+        <use href="#cloud" x="520" y="150" width="100" height="47" fill="#FFF4E4"/>
+      </svg>
+      <div style="position:relative;z-index:2">
+        <p class="eyebrow" style="color:#F3D9A8">Free · No Download</p>
+        <h2 class="display h-lg" style="margin-top:6px">Ready to play your part?</h2>
+      </div>
+      <a class="btn btn-cream" href="signin.html" style="position:relative;z-index:2">Sign In Free&nbsp;›</a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="font-size:19px">
+          <svg class="seal sm"><use href="#seal-goat"/></svg><span>SAFRA PLAY</span>
+        </a>
+        <p class="small" style="margin-top:12px;max-width:280px">Gamified learning for NSmen — play mini-games, climb the leaderboard, win real prizes.</p>
+      </div>
+      <div><h5>SAFRA Play</h5><a href="index.html#how">How it works</a><a href="campaigns.html">Prizes</a><a href="leaderboard.html">Leaderboard</a></div>
+      <div><h5>Legal</h5><a href="#">User Agreement</a><a href="#">Code of Conduct</a><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      <div><h5>Contact</h5><a href="#">Email Support</a><div style="display:flex;gap:12px;margin-top:12px;font-size:12px;letter-spacing:.08em"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a><a href="#">Telegram</a></div></div>
+    </div>
+    <div class="legal">SAFRA Play is offered as a limited-time pilot. Its continued availability and any future extension are at SAFRA&rsquo;s sole discretion. © 2026 SAFRA. All Rights Reserved.</div>
+  </div>
+</footer>
+
+</div>
+<script src="assets/main.js"></script>
+</body>
+</html>

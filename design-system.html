@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Design System — SAFRA Play · Year of the Goat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="./assets/theme-DbFIwzDo.css">
+</head>
+<body>
+<div class="page">
+
+<nav class="nav no-print">
+  <a class="brand" href="index.html">
+    <svg class="seal"><use href="#seal-goat"/></svg>
+    <span>SAFRA PLAY<small>DESIGN SYSTEM</small></span>
+  </a>
+  <div class="nav-links"><a href="index.html">← Back to prototype</a></div>
+  <div class="nav-right"><button class="btn btn-ghost" onclick="window.print()">Export PDF / Print</button></div>
+</nav>
+
+<div class="sheet">
+
+  <div class="sheet-head">
+    <div>
+      <p class="eyebrow">SAFRA Play · Gamification Platform</p>
+      <h1 class="display h-xl" style="margin-top:10px">CNY Theme · Year of the Goat</h1>
+      <p class="sub" style="margin-top:8px">Design System Summary — “The Ascent” · v1.0 · September 2026</p>
+    </div>
+    <svg class="seal" style="width:72px;height:72px"><use href="#seal-goat"/></svg>
+  </div>
+
+  <!-- Concept -->
+  <div class="sheet-sec">
+    <p class="eyebrow">01 · Concept</p>
+    <h2>The Ascent</h2>
+    <div class="type-row">
+      <p class="sub">The mountain goat is the season&rsquo;s hero: it climbs terraced golden peaks the way players climb the leaderboard. Campaigns are ascents, points are altitude, and the season finale is the Golden Peak. The theme keeps Chinese New Year warmth — vermilion, gold, plum blossom — but lightened onto rice-paper cream with a fresh jade counter-accent, so the interface feels festive yet calm and breathable.</p>
+      <p class="sub"><strong>Voice:</strong> warm, encouraging, unhurried. <strong>Motifs:</strong> paper-cut goat, terraced peaks, auspicious clouds, plum blossom, lanterns, red seal stamps with blessing characters (羊年大吉 · 恭喜发财 · 喜气洋洋 · 新年如意). <strong>Texture:</strong> subtle paper grain, hairline gold borders, soft shadows — never glossy, never neon.</p>
+    </div>
+  </div>
+
+  <!-- Palette -->
+  <div class="sheet-sec">
+    <p class="eyebrow">02 · Palette</p>
+    <h2>Colour Tokens</h2>
+    <div class="swatches">
+      <div class="swatch"><div class="fill" style="background:#FAF4E8"></div><div class="info"><div class="name">Rice Paper</div><div class="hex">#FAF4E8 · --paper</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#2B1D16"></div><div class="info"><div class="name">Ink Brown</div><div class="hex">#2B1D16 · --ink</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#C13A2A"></div><div class="info"><div class="name">Vermilion</div><div class="hex">#C13A2A · --vermilion</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#C9A24B"></div><div class="info"><div class="name">Antique Gold</div><div class="hex">#C9A24B · --gold</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#4E7E62"></div><div class="info"><div class="name">Jade</div><div class="hex">#4E7E62 · --jade</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#FFFDF6;border-bottom:1px solid #EFE3C6"></div><div class="info"><div class="name">Card Cream</div><div class="hex">#FFFDF6 · --card</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#A02C1F"></div><div class="info"><div class="name">Vermilion Deep</div><div class="hex">#A02C1F · hover</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#F7E4DD"></div><div class="info"><div class="name">Vermilion Wash</div><div class="hex">#F7E4DD · --vermilion-bg</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#EFE3C6"></div><div class="info"><div class="name">Gold Wash</div><div class="hex">#EFE3C6 · --gold-soft</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#E9F1E9"></div><div class="info"><div class="name">Jade Wash</div><div class="hex">#E9F1E9 · --jade-bg</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#6B5A4E"></div><div class="info"><div class="name">Ink Soft</div><div class="hex">#6B5A4E · --ink-soft</div></div></div>
+      <div class="swatch"><div class="fill" style="background:repeating-linear-gradient(90deg,#C9A24B 0 1px,transparent 1px 8px)"></div><div class="info"><div class="name">Hairline Gold</div><div class="hex">rgba(201,162,75,.45)</div></div></div>
+    </div>
+  </div>
+
+  <!-- Typography -->
+  <div class="sheet-sec">
+    <p class="eyebrow">03 · Typography</p>
+    <h2>Two Families, One Voice</h2>
+    <div class="type-row">
+      <div class="card">
+        <p class="c-label" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:12px">Display — Fraunces / Noto Serif SC</p>
+        <p class="display" style="font-size:44px">Climb the Golden Peak</p>
+        <p class="display" style="font-size:28px;margin-top:10px">Race, recall, rise. 羊年大吉</p>
+        <p class="small" style="margin-top:12px">Headlines, numerals, quotes. Weight 600, tight leading, letter-spacing −0.01em. Chinese blessings in Noto Serif SC 600–700.</p>
+      </div>
+      <div class="card">
+        <p class="c-label" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:12px">UI — DM Sans</p>
+        <p style="font-size:17px;font-weight:700">Buttons, labels and navigation</p>
+        <p style="font-size:15px;margin-top:8px">Body copy and meta text stay in a calm grotesk at 13–17px, #2B1D16 primary and #6B5A4E secondary.</p>
+        <p class="eyebrow" style="margin-top:14px">Eyebrow · 12px · +0.22em · Gold Deep</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Motifs -->
+  <div class="sheet-sec">
+    <p class="eyebrow">04 · Motifs</p>
+    <h2>Paper-Cut Motif Library</h2>
+    <div class="motif-row">
+      <div class="card motif-cell"><svg width="72" height="72" viewBox="0 0 48 48"><use href="#seal-goat"/></svg><div class="m-label">Seal Logo · 羊</div></div>
+      <div class="card motif-cell"><svg width="90" height="82" viewBox="0 0 110 100"><use href="#goat" fill="#C9A24B"/></svg><div class="m-label">Mountain Goat</div></div>
+      <div class="card motif-cell"><svg width="96" height="46" viewBox="0 0 72 34"><use href="#cloud" fill="#C9A24B"/></svg><div class="m-label">Auspicious Cloud</div></div>
+      <div class="card motif-cell"><svg width="64" height="64" viewBox="0 0 48 48"><use href="#blossom" style="color:#C13A2A"/></svg><div class="m-label">Plum Blossom</div></div>
+      <div class="card motif-cell"><svg width="48" height="64" viewBox="0 0 60 80"><use href="#lantern" style="color:#C13A2A"/></svg><div class="m-label">Lantern</div></div>
+    </div>
+  </div>
+
+  <!-- Components -->
+  <div class="sheet-sec">
+    <p class="eyebrow">05 · Components</p>
+    <h2>Component Samples</h2>
+    <div class="comp-grid">
+      <div class="card comp-cell">
+        <p class="c-label">Buttons</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="btn btn-primary">Play Now ›</button>
+          <button class="btn btn-ghost">See How It Works</button>
+          <button class="btn btn-jade">Play ›</button>
+          <button class="btn btn-cream" style="background:#FFF8EC;border:1px solid var(--hairline)">Sign In Free</button>
+          <button class="btn-locked" style="width:auto;padding:10px 22px">🔒 Locked</button>
+        </div>
+      </div>
+      <div class="card comp-cell">
+        <p class="c-label">Tags &amp; Chips</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <span class="tag tag-red">Active · CNY Special</span>
+          <span class="tag tag-jade">Open</span>
+          <span class="tag tag-gold">0%</span>
+          <span class="tag tag-grey">🔒 Locked</span>
+          <span class="tag tag-outline">Ended</span>
+          <span class="user-chip"><span class="avatar">T</span>tschew</span>
+        </div>
+      </div>
+      <div class="card comp-cell">
+        <p class="c-label">Wave Card</p>
+        <div class="card wave-card open" style="box-shadow:none">
+          <div style="display:flex;justify-content:space-between;align-items:center"><span class="wave-num">01</span><span class="tag tag-jade">Open</span></div>
+          <h4>Wave 1 – The Call</h4>
+          <p>It begins with a decision to serve.</p>
+          <div class="wave-foot"><span>0 / 3 games completed</span></div>
+          <button class="btn btn-primary btn-block">Start ›</button>
+        </div>
+      </div>
+      <div class="card comp-cell">
+        <p class="c-label">Memory Card (game token)</p>
+        <div style="display:flex;gap:18px;align-items:center">
+          <div class="mm-card flipped" style="cursor:default"><span class="mm-inner"><span class="mm-face mm-back"></span><span class="mm-face mm-front"><img class="mm-face-img" src="./assets/art-face-goat-Cy3zCq22.jpg" alt=""/></span></span></div>
+          <div class="mm-card" style="cursor:default"><span class="mm-inner"><span class="mm-face mm-back"></span><span class="mm-face mm-front"></span></span></div>
+          <p class="small">Face-down: vermilion card with gold lantern (from approved comp).<br/>Face-up: cream card with gold paper-cut motif.</p>
+        </div>
+      </div>
+      <div class="card comp-cell">
+        <p class="c-label">Progress &amp; Countdown</p>
+        <div class="progress-label" style="margin-bottom:6px">2,450 / 5,000 points</div>
+        <div class="progress"><i style="width:49%"></i></div>
+        <div style="display:flex;gap:10px;margin-top:18px">
+          <div class="count-tile" style="min-width:70px;padding:12px 6px"><div class="n" style="font-size:28px">29</div><div class="l">Days</div></div>
+          <div class="count-tile" style="min-width:70px;padding:12px 6px"><div class="n" style="font-size:28px">14</div><div class="l">Hours</div></div>
+        </div>
+      </div>
+      <div class="card comp-cell">
+        <p class="c-label">Accordion Item</p>
+        <div class="acc-item open" style="border-bottom:none">
+          <button class="acc-q"><span class="tag tag-red">Prize</span><span class="txt">How do I claim my prize?</span><span class="pm">+</span></button>
+          <div class="acc-a">Winners receive a prize token in their Prize Wallet — present it at SAFRA Mount Faber within 30 days.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page index -->
+  <div class="sheet-sec no-print">
+    <p class="eyebrow">06 · Prototype Index</p>
+    <h2>All 13 Screens</h2>
+    <div class="page-index">
+      <a href="index.html"><span class="pi-num">01</span>Home</a>
+      <a href="campaigns.html"><span class="pi-num">02</span>My Campaigns</a>
+      <a href="leaderboard.html"><span class="pi-num">03</span>Leaderboard</a>
+      <a href="profile.html"><span class="pi-num">04</span>Profile</a>
+      <a href="faq.html"><span class="pi-num">05</span>FAQ</a>
+      <a href="signin.html"><span class="pi-num">06</span>Sign In</a>
+      <a href="campaign-join.html"><span class="pi-num">07</span>Campaign · Join</a>
+      <a href="campaign-joined.html"><span class="pi-num">08</span>Campaign · Progress</a>
+      <a href="wave-1.html"><span class="pi-num">09</span>Wave 1 Detail</a>
+      <a href="quiz.html"><span class="pi-num">10</span>Defence Briefing Quiz</a>
+      <a href="game-intro.html"><span class="pi-num">11</span>Game Story Intro</a>
+      <a href="round-briefing.html"><span class="pi-num">12</span>Round Briefing</a>
+      <a href="memory-match.html"><span class="pi-num">13</span>Memory Match</a>
+    </div>
+  </div>
+
+  <p class="small" style="text-align:center;border-top:1px solid var(--hairline);padding-top:24px">SAFRA Play · CNY Year of the Goat theme · Design tokens live in <code>assets/theme.css</code> · Motif SVG library in <code>assets/main.js</code></p>
+
+</div>
+</div>
+<script src="assets/main.js"></script>
+</body>
+</html>

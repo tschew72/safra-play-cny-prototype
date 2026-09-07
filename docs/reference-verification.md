@@ -29,3 +29,13 @@ memory board starts face-down; the reference depicts cards during play.
 Illustrated banners retain the reference's baked-in copy and sample dates.
 Profile, standings, authentication and prizes remain prototype content;
 no production SAFRA services are connected or deployed by this revision.
+
+## Home-page follow-up — leaderboard and prizes
+
+Extended the reference theme into the lower home page with the mountain podium,
+a semantic standings table, red-and-gold voucher panel, and numbered redemption
+steps. The campaign preview now keeps three compact columns at tablet widths.
+Verified the built home page at 390, 986, 1440 and 2048 pixels: no page overflow,
+failed images or browser warnings/errors; podium artwork matches its container
+width. Full Leaderboard and Open Prize Wallet navigate to the expected pages.
+Production build and whitespace checks passed.

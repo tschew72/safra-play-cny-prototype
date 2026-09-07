@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css"/>
 <link rel="stylesheet" href="assets/screens-reference.css"/>
+<link rel="stylesheet" href="assets/home-season.css"/>
 </head>
 <body class=" reference-screen ref-index">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -37,7 +38,7 @@
 <div class="home-prize card"><span class="ref-crop phone-art" style="--x:1191;--y:732;--w:136;--h:170"><img src="assets/references/index.png" alt="iPhone 17 Pro prize illustration"/></span><div><h2>iPhone 17 Pro —<br/>Top Prize, Leaderboard Champion</h2><a class="btn btn-primary" href="signin.html">Join Now　›</a></div></div>
 </section><section class="home-how" id="how"><h2 class="display">How It Works</h2><div class="steps"><div class="card step-card"><span class="step-num">1</span><span class="ref-crop step-art" style="--x:262;--y:1038;--w:64;--h:71" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><div><h3>Sign Up Free</h3><p>Create your account in seconds. It’s fast and free.</p></div></div><div class="card step-card"><span class="step-num">2</span><span class="ref-crop step-art" style="--x:893;--y:1041;--w:67;--h:64" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><div><h3>Play & Learn</h3><p>Take on quiz challenges and learn something new.</p></div></div><div class="card step-card"><span class="step-num">3</span><span class="ref-crop step-art" style="--x:1488;--y:1041;--w:67;--h:68" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><div><h3>Score & Win</h3><p>Climb the leaderboard and win amazing prizes.</p></div></div></div></section>
   <!-- ACTIVE CAMPAIGNS PREVIEW -->
-  <section class="section" style="padding-top:24px">
+  <section class="section home-campaigns" style="padding-top:24px">
     <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end">
       <div>
         <p class="eyebrow">Live Now</p>
@@ -92,62 +93,44 @@
   </section>
 
   <!-- LEADERBOARD PREVIEW -->
-  <section class="section" id="leaderboard" style="padding-top:24px">
-    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
-      <div>
-        <p class="eyebrow">Live Standings</p>
-        <h2 class="display h-lg">Leaderboard</h2>
-        <p class="sub" style="margin-top:8px">Live standings. Play mini-games to claim your spot!</p>
+  <section class="home-season-section" id="leaderboard" aria-labelledby="home-standings-title">
+    <header class="home-season-heading">
+      <div><p class="eyebrow">Live Standings · CNY Season</p><h2 id="home-standings-title">Leaderboard</h2><p>Play mini-games to claim your spot on the golden peak.</p></div>
+      <a class="season-text-link" href="leaderboard.html">Full Leaderboard <span aria-hidden="true">↗</span></a>
+    </header>
+    <div class="home-standings card">
+      <div class="home-podium" role="img" aria-label="First: Wei_Liang, 12,480 points. Second: Cheryl T., 11,905 points. Third: Ahmad R., 11,340 points.">
+        <span class="ref-crop home-podium-art" style="--x:0;--y:293;--w:2048;--h:400"><img src="assets/references/leaderboard.png" alt=""/></span>
       </div>
-      <select class="campaign-select" aria-label="Select campaign">
-        <option selected>Prosperity Ascent Challenge</option>
-        <option>Lucky Trivia Trail</option>
-      </select>
-    </div>
-    <div class="card" style="padding:28px 32px">
-      <div class="podium-mini">
-        <div class="pm-col second"><div class="pm-avatar">CT</div><strong class="display" style="font-size:16px">Cheryl T.</strong><span class="pts">11,905 pts</span><span class="rank-badge silver">2</span></div>
-        <div class="pm-col first"><div class="pm-avatar">WL</div><strong class="display" style="font-size:18px">Wei_Liang</strong><span class="pts">12,480 pts</span><span class="rank-badge gold">1</span></div>
-        <div class="pm-col third"><div class="pm-avatar">AR</div><strong class="display" style="font-size:16px">Ahmad R.</strong><span class="pts">11,340 pts</span><span class="rank-badge bronze">3</span></div>
+      <div class="home-standings-bottom">
+        <table class="home-rank-table"><caption class="sr-only">Season leaderboard, places 4 to 10</caption><thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Points</th></tr></thead><tbody><tr class=""><td>4</td><th scope="row">Daniel Ng</th><td>10,210 pts</td></tr><tr class=""><td>5</td><th scope="row">Tan Mei Ling</th><td>9,845 pts</td></tr><tr class="your-standing"><td>6</td><th scope="row">You</th><td>9,320 pts</td></tr><tr class=""><td>7</td><th scope="row">Marcus Lee</th><td>8,610 pts</td></tr><tr class=""><td>8</td><th scope="row">Nurul A.</th><td>8,050 pts</td></tr><tr class=""><td>9</td><th scope="row">r***2@y***m</th><td>7,920 pts</td></tr><tr class=""><td>10</td><th scope="row">p***c@g***m</th><td>7,700 pts</td></tr></tbody></table>
+        <aside class="home-climb">
+          <span class="season-flower" aria-hidden="true">❀</span><p class="eyebrow">Your next challenge</p><h3>Keep climbing.</h3><p>Every game brings you closer to the top. Return to your campaign and make your next move.</p>
+          <a class="btn btn-primary" href="campaigns.html">Continue Playing <span aria-hidden="true">›</span></a>
+          <span class="climb-blessing">羊年大吉</span>
+        </aside>
       </div>
-      <div class="table-card" style="margin-top:20px">
-        <div class="trow"><span class="rank">4</span><span><strong>Daniel Ng</strong></span><span class="pts">10,210 pts</span></div>
-        <div class="trow"><span class="rank">5</span><span><strong>Tan Mei Ling</strong></span><span class="pts">9,845 pts</span></div>
-        <div class="trow you"><span class="rank">6</span><span><strong>You</strong> <span class="tag tag-red" style="margin-left:8px">You</span></span><span class="pts">9,320 pts</span></div>
-        <div class="trow"><span class="rank">7</span><span><strong>Marcus Lee</strong></span><span class="pts">8,610 pts</span></div>
-        <div class="trow"><span class="rank">8</span><span><strong>Nurul A.</strong></span><span class="pts">8,050 pts</span></div>
-        <div class="trow"><span class="rank">9</span><span><strong>r***2@y***m</strong></span><span class="pts">7,920 pts</span></div>
-        <div class="trow"><span class="rank">10</span><span><strong>p***c@g***m</strong></span><span class="pts">7,700 pts</span></div>
-      </div>
-      <p style="margin-top:18px;text-align:right"><a class="link-arrow" href="leaderboard.html">Full Leaderboard →</a></p>
     </div>
   </section>
 
-  <!-- RACE TO THE TOP -->
-  <section class="section" id="challenge" style="padding-top:24px">
-    <div class="section-head" style="text-align:center">
-      <p class="eyebrow">Season Prizes</p>
-      <h2 class="display h-lg">Race to the Top</h2>
-      <p class="sub" style="margin-top:10px">The top players on the leaderboard at the close of the season each walk away with a $20 SAFRA voucher.</p>
-    </div>
-    <div class="race-grid">
-      <div class="card race-art card-lift">
-        <img src="assets/img/art-empty-goat.jpg" alt="Goat standing on a golden peak beneath lanterns"/>
-        <p class="small" style="margin-top:16px">Leaderboard standings are final at close. Tokens not redeemed within 30 days of issuance will expire. While stocks last.</p>
+  <!-- SEASON PRIZES -->
+  <section class="home-season-section" id="challenge" aria-labelledby="home-prizes-title">
+    <header class="home-season-heading"><div><p class="eyebrow">Season Prizes</p><h2 id="home-prizes-title">Race to the Top</h2><p>The top players at the close of the season each win a $20 SAFRA voucher.</p></div><span class="season-flower" aria-hidden="true">❀</span></header>
+    <div class="home-prize-story card">
+      <div class="season-reward">
+        <p class="eyebrow">A little fortune awaits</p>
+        <div class="season-voucher"><span class="voucher-value">$20</span><div><strong>SAFRA Voucher</strong><span>Season leaderboard reward</span></div><span class="voucher-seal" aria-hidden="true">羊</span></div>
+        <span class="ref-crop reward-goat" style="--x:1500;--y:665;--w:401;--h:259"><img src="assets/references/campaign-joined.png" alt="Paper-cut goat on a golden mountain peak"/></span>
+        <p class="reward-blessing">May fortune climb as high<br/>as the mountain goat.</p>
       </div>
-      <div style="display:flex;flex-direction:column;gap:18px">
-        <div class="card" style="display:flex;gap:16px;align-items:flex-start;padding:22px 26px">
-          <span class="num" style="font-size:26px">1</span>
-          <div><h3 class="display h-sm" style="margin-bottom:6px">Finish in the top</h3><p class="small">Standings are final at 0900 hrs, 31 Aug 2026.</p></div>
-        </div>
-        <div class="card" style="display:flex;gap:16px;align-items:flex-start;padding:22px 26px">
-          <span class="num" style="font-size:26px">2</span>
-          <div><h3 class="display h-sm" style="margin-bottom:6px">Token in your Prize Wallet</h3><p class="small">Winners receive a prize token in-platform.</p></div>
-        </div>
-        <div class="card" style="display:flex;gap:16px;align-items:flex-start;padding:22px 26px">
-          <span class="num" style="font-size:26px">3</span>
-          <div><h3 class="display h-sm" style="margin-bottom:6px">Redeem at Mount Faber</h3><p class="small">Present the token at SAFRA Mount Faber within 30 days of issuance.</p></div>
-        </div>
+      <div class="season-redemption"><p class="eyebrow">Your path to a prize</p><h3>Play. Climb. Celebrate.</h3>
+        <ol class="redemption-steps">
+          <li><span class="redemption-number" aria-hidden="true">1</span><div><h4>Finish in the top</h4><p>Standings are final at 0900 hrs, 31 Aug 2026.</p></div></li>
+          <li><span class="redemption-number" aria-hidden="true">2</span><div><h4>Find your prize token</h4><p>Winners receive a token in their Prize Wallet.</p></div></li>
+          <li><span class="redemption-number" aria-hidden="true">3</span><div><h4>Redeem at Mount Faber</h4><p>Present your token at SAFRA Mount Faber within 30 days of issuance.</p></div></li>
+        </ol>
+        <a class="btn btn-jade" href="profile.html">Open Prize Wallet <span aria-hidden="true">›</span></a>
+        <p class="redemption-note">Tokens expire 30 days after issuance. While stocks last.</p>
       </div>
     </div>
   </section>

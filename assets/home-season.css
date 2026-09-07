@@ -1,0 +1,92 @@
+/* Extend the approved CNY composition through the home page's lower sections. */
+.ref-index .home-season-section { padding:clamp(32px,4vw,72px) 0; scroll-margin-top:100px; }
+.ref-index .home-season-section + .home-season-section { border-top:1px solid var(--hairline); }
+.home-season-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:24px; }
+.ref-index .home-season-heading .eyebrow,.ref-index .home-climb .eyebrow,.ref-index .season-reward .eyebrow,.ref-index .season-redemption .eyebrow { font-size:12px; letter-spacing:.18em; }
+.home-season-heading h2 { font:400 clamp(36px,4vw,64px)/1.1 var(--font-display); margin:10px 0; }
+.home-season-heading p:not(.eyebrow) { font-size:clamp(14px,1.25vw,19px); color:var(--ink-soft); max-width:720px; }
+.season-text-link { display:inline-flex; align-items:center; gap:14px; padding:8px 0; border-bottom:1px solid var(--gold); color:var(--jade); white-space:nowrap; font-size:15px; }
+.ref-index .home-standings,.ref-index .home-prize-story { border:1px solid var(--gold); border-radius:18px; overflow:hidden; background:var(--paper); box-shadow:0 6px 18px #58381812; }
+.home-podium { overflow:hidden; border-bottom:1px solid var(--hairline); }
+.home-podium-art { --u:calc((89.7461vw - 2px) / 2048); mix-blend-mode:multiply; }
+.home-standings-bottom { display:grid; grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr); gap:32px; padding:24px 30px; }
+.home-rank-table { width:100%; border-collapse:collapse; font-size:15px; }
+.home-rank-table th,.home-rank-table td { padding:11px 15px; text-align:left; border-bottom:1px solid var(--hairline-soft); font-weight:400; }
+.home-rank-table thead th { color:var(--ink-soft); font-size:12px; letter-spacing:.08em; text-transform:uppercase; }
+.home-rank-table th:last-child,.home-rank-table td:last-child { text-align:right; white-space:nowrap; }
+.home-rank-table td:first-child { width:65px; font:28px var(--font-display); color:var(--gold-deep); }
+.home-rank-table tbody tr:last-child>* { border-bottom:0; }
+.home-rank-table .your-standing>* { background:var(--vermilion-bg); color:var(--vermilion); }
+.home-climb { display:flex; flex-direction:column; justify-content:center; align-items:start; border-left:1px solid var(--hairline); padding:16px 0 16px 32px; }
+.season-flower { font:52px/1 var(--font-display); color:var(--gold); }
+.home-climb .season-flower { margin-bottom:22px; }
+.home-climb h3,.season-redemption h3 { font:400 clamp(30px,2.8vw,44px)/1.1 var(--font-display); margin:10px 0 16px; }
+.home-climb>p:not(.eyebrow) { font-size:15px; color:var(--ink-soft); line-height:1.6; }
+.ref-index .home-season-section .btn { font-size:15px; gap:20px; padding:13px 24px; }
+.home-climb .btn { margin:24px 0; }
+.climb-blessing { font:24px var(--font-display); color:var(--gold-deep); letter-spacing:.25em; }
+.home-prize-story { display:grid; grid-template-columns:1fr 1.1fr; }
+.season-reward { padding:34px; position:relative; text-align:center; border-right:1px solid var(--hairline); background:linear-gradient(145deg,var(--gold-soft),transparent 65%); }
+.season-voucher { background:var(--vermilion); color:var(--paper); border:1px solid var(--gold); outline:1px solid var(--gold); outline-offset:-9px; border-radius:10px; padding:32px 22px; margin:22px 0 18px; display:flex; align-items:center; justify-content:center; gap:18px; box-shadow:0 6px 12px #67291120; position:relative; }
+.voucher-value { font:clamp(42px,5vw,76px)/1 var(--font-display); }
+.season-voucher>div { text-align:left; }
+.season-voucher strong { display:block; font:clamp(19px,2vw,30px) var(--font-display); white-space:nowrap; }
+.season-voucher>div>span { font-size:11px; color:var(--gold-soft); }
+.voucher-seal { width:48px; height:48px; border:1px solid var(--gold); border-radius:50%; display:grid; place-items:center; font:27px var(--font-display); color:var(--gold-soft); flex:none; }
+.reward-goat { --u:clamp(.45px,.025vw,.7px); margin:0 auto; mix-blend-mode:multiply; mask-image:radial-gradient(ellipse,#000 57%,transparent 73%); }
+.reward-blessing { font:italic clamp(19px,1.7vw,26px)/1.3 var(--font-display); color:var(--jade); margin-top:8px; }
+.season-redemption { padding:34px; }
+.redemption-steps { list-style:none; padding:0; margin:6px 0 26px; }
+.redemption-steps li { display:flex; gap:18px; padding:20px 0; border-bottom:1px solid var(--hairline); }
+.redemption-number { width:38px; height:38px; display:grid; place-items:center; border-radius:50%; background:var(--vermilion); color:var(--paper); font:26px var(--font-display); flex:none; }
+.redemption-steps h4 { font:24px/1.2 var(--font-display); margin:0 0 6px; }
+.redemption-steps p { font-size:14px; color:var(--ink-soft); }
+.redemption-note { font-size:12px; color:var(--ink-soft); margin-top:16px; }
+/* Prevent the old 1100px breakpoint from turning campaign art into full-page panels. */
+@media(min-width:761px) {
+.ref-index .home-campaigns .campaign-grid { grid-template-columns:1.65fr 1fr 1fr; gap:18px; }
+.ref-index .home-campaigns .campaign-card { min-width:0; height:auto; }
+.ref-index .home-campaigns .campaign-card.horizontal { flex-direction:column; }
+.ref-index .home-campaigns .campaign-card .art,.ref-index .home-campaigns .campaign-card.horizontal .art { width:100%; height:clamp(145px,15vw,260px); aspect-ratio:auto; }
+.ref-index .home-campaigns .campaign-card .art img { width:100%; height:100%; object-fit:cover; }
+.ref-index .home-campaigns .campaign-card .body,.ref-index .home-campaigns .campaign-card.horizontal .body { width:100%; padding:20px; gap:14px; }
+.ref-index .home-campaigns .campaign-card .body h3 { font:clamp(22px,2vw,34px)/1.1 var(--font-display); }
+.ref-index .home-campaigns .campaign-card .meta { font-size:12px; white-space:normal; flex-wrap:wrap; }
+.ref-index .home-campaigns .campaign-card .btn { font-size:14px; padding:12px 16px; }
+.ref-index .home-campaigns .campaign-card .tag { font-size:10px; }
+.ref-index .home-campaigns .fc-progress,.ref-index .home-campaigns .fc-cta { margin-top:0; }
+.ref-index .home-campaigns .progress-label { font-size:13px; }
+.ref-index .home-campaigns .section-head { gap:24px; }
+.ref-index .home-campaigns .sub { font-size:15px; }
+}
+@media(max-width:1100px) and (min-width:761px) {
+.season-reward,.season-redemption { padding:26px; }
+.voucher-seal { display:none; }
+.home-standings-bottom { gap:24px; padding:20px; }
+.home-climb { padding-left:24px; }
+}
+@media(max-width:760px) {
+.home-season-heading { align-items:start; flex-direction:column; gap:12px; }
+.home-season-heading>.season-flower { display:none; }
+.home-podium-art { --u:calc((100vw - 42px) / 2048); }
+.home-standings-bottom,.home-prize-story { grid-template-columns:1fr; }
+.home-standings-bottom { padding:16px; gap:20px; }
+.home-rank-table th,.home-rank-table td { padding:10px 8px; font-size:13px; }
+.home-rank-table td:first-child { font-size:24px; width:40px; }
+.home-climb { border-left:0; border-top:1px solid var(--hairline); padding:24px 6px 8px; }
+.home-climb .season-flower { display:none; }
+.season-reward { border-right:0; border-bottom:1px solid var(--hairline); }
+.season-reward,.season-redemption { padding:26px 22px; }
+.voucher-seal { display:none; }
+.season-voucher { padding:28px 20px; gap:14px; }
+.ref-index .home-campaigns .art { max-height:210px; overflow:hidden; }
+}
+.ref-index .home-standings,.ref-index .home-prize-story { padding:0; }
+.ref-index .nav { background:var(--paper); }
+.reward-goat { --u:clamp(.6px,.04vw,.85px); }
+.home-podium { container-type:inline-size; }
+.home-podium-art { --u:calc(100cqw / 2048); }
+@media(max-width:760px) {
+.ref-index .page>.wrap { padding-left:20px; padding-right:20px; }
+.home-podium-art { --u:calc(100cqw / 2048); }
+}

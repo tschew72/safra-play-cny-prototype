@@ -1,0 +1,85 @@
+/* Campaign reference composition, scaled from the supplied 2048px artwork. */
+.campaigns-reference { --paper: #faf5e7; --card: #faf5e7; --ink: #29170b; --font-display: Georgia, serif; --font-ui: Arial, sans-serif; }
+.campaigns-reference .theme-preview, .campaigns-reference .footer { display: none; }
+.campaigns-reference::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.13' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 180px; opacity: .6; }
+.campaigns-reference .reference-seal { width: 48px; height: 48px; border-radius: 50%; mix-blend-mode: multiply; }
+.campaigns-reference .campaign-controls { display: flex; flex-wrap: wrap; gap: 24px; padding: 24px 0; }
+.campaigns-reference .campaign-list { padding-bottom: 40px; }
+@media (min-width: 761px) {
+.campaigns-reference .nav { height: 5.85938vw; padding: 0 2.83203vw; gap: 0; background: transparent; border-bottom: 0.04883vw solid #d7c9ac; }
+.campaigns-reference .nav .brand { font-family: Georgia, serif; color: #261307; font-size: 2.44141vw; letter-spacing: 0; gap: 0.97656vw; }
+.campaigns-reference .nav .reference-seal { width: 3.66211vw; height: 3.66211vw; border-radius: 50%; mix-blend-mode: multiply; }
+.campaigns-reference .nav .brand small { display: none; }
+.campaigns-reference .nav-links { position: absolute; left: 31.73828vw; gap: 3.71094vw; font-size: 1.31836vw; font-weight: 500; }
+.campaigns-reference .nav-links a { padding: 1.36719vw 0; }
+.campaigns-reference .nav-links a.active::after { height: 0.14648vw; bottom: 0.24414vw; }
+.campaigns-reference .nav-right { margin-left: auto; }
+.campaigns-reference .nav-right .btn { width: 7.56836vw; padding: 0.63477vw 1.07422vw; font-size: 1.22070vw; }
+.campaigns-reference .wrap { width: 100%; max-width: none; padding: 0 3.02734vw; }
+.campaigns-reference .camp-head { height: 14.59961vw; padding: 2.53906vw 0 0; }
+.campaigns-reference .camp-head .eyebrow { font: 0.97656vw Arial, sans-serif; letter-spacing: 0.09766vw; color: #594b3e; }
+.campaigns-reference .camp-title { font-family: Georgia, serif; font-size: 5.81055vw; font-weight: 400; letter-spacing: -0.19531vw; margin: 0.87891vw 0 0; line-height: 1; }
+.campaigns-reference .camp-head .sub { font: 1.22070vw Arial, sans-serif; margin-top: 1.17188vw !important; }
+.campaigns-reference .camp-head-art { display: block; width: 41.74805vw; top: 0.24414vw; right: -3.02734vw; mask-image: linear-gradient(to right, transparent, #000 12%, #000 96%, transparent), linear-gradient(transparent, #000 6%, #000 94%, transparent); mask-composite: intersect; -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 96%, transparent), linear-gradient(transparent, #000 6%, #000 94%, transparent); -webkit-mask-composite: source-in; }
+.campaigns-reference .campaign-controls { height: 6.20117vw; display: flex; align-items: flex-start; gap: 2.92969vw; padding: 0; position: relative; }
+.campaigns-reference .campaign-controls > div:first-child { gap: 2.34375vw !important; }
+.campaigns-reference .count-card { width: 9.96094vw; height: 4.88281vw; padding: 0.87891vw 1.02539vw; gap: 1.31836vw; border-radius: 0.68359vw; background: #edead75c; border-color: #d1c9b4; }
+.campaigns-reference .count-icon { width: 2.92969vw; height: 2.92969vw; border-radius: 50%; }
+.campaigns-reference .count-icon svg { width: 1.46484vw; height: 1.46484vw; }
+.campaigns-reference .count-num { font: 700 1.66016vw Arial, sans-serif; color: #517651; }
+.campaigns-reference .count-lbl { font: 0.97656vw Arial, sans-serif; text-transform: capitalize; letter-spacing: 0; color: #517651; }
+.campaigns-reference .count-card + .count-card .count-num, .campaigns-reference .count-card + .count-card .count-lbl { color: #8c8980; }
+.campaigns-reference .tabs { gap: 1.07422vw; margin-top: 1.07422vw; }
+.campaigns-reference .tab { position: relative; height: 3.41797vw; min-width: 7.56836vw; padding: 0 1.66016vw; border: 0.04883vw solid #b83020; border-radius: 0.68359vw; color: #b83020; background: transparent; font: 1.17188vw Arial, sans-serif; }
+.campaigns-reference .tab::before { content: ''; position: absolute; left: 0.34180vw; top: 1.46484vw; width: 0.48828vw; height: 0.48828vw; border-radius: 50%; background: #e7ddc8; box-shadow: inset 0 0.04883vw 0.14648vw #a89b8066; }
+.campaigns-reference .tab.active { background: #c63822; color: #fff9ec; padding-left: 2.09961vw; padding-right: 1.70898vw; box-shadow: 0 0.14648vw 0.19531vw #58321933; }
+.campaigns-reference .campaign-list { padding: 0 0 3.02734vw; }
+.campaigns-reference .campaign-grid { grid-template-columns: 1018fr 409fr 443fr; gap: 1.26953vw; justify-content: normal; align-items: stretch; }
+.campaigns-reference .campaign-card { height: 26.51367vw; border: 0.09766vw solid #d6b16d; border-radius: 1.07422vw; background: transparent; box-shadow: 0 0.58594vw 0.87891vw #70512a26; overflow: hidden; }
+.campaigns-reference .campaign-card.horizontal { flex-direction: row; }
+.campaigns-reference .campaign-card.horizontal .art { width: 49%; height: 100%; margin: 0; border-radius: 0; aspect-ratio: auto; mask-image: linear-gradient(to right, #000 78%, transparent); }
+.campaigns-reference .campaign-card.horizontal .art img { object-fit: fill; }
+.campaigns-reference .campaign-card.horizontal .body { padding: 1.36719vw 1.61133vw 1.75781vw 0.29297vw; gap: 0; justify-content: flex-start; }
+.campaigns-reference .campaign-card .tag { font: 700 0.87891vw Arial, sans-serif; letter-spacing: 0; padding: 0.48828vw 1.17188vw; border-radius: 0; clip-path: polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%); }
+.campaigns-reference .campaign-card.horizontal .body > .tag { margin-bottom: 1.26953vw; }
+.campaigns-reference .campaign-card.horizontal .h-md { font: 400 3.22266vw/1.07 Georgia, serif; letter-spacing: -0.09766vw; }
+.campaigns-reference .campaign-card.horizontal .meta { margin-top: 1.31836vw; font: 0.78125vw Arial, sans-serif; gap: 0.48828vw; flex-wrap: nowrap; white-space: nowrap; }
+.campaigns-reference .meta svg { width: 0.83008vw; height: 0.83008vw; }
+.campaigns-reference .campaign-card.horizontal .fc-progress { margin-top: 1.70898vw; }
+.campaigns-reference .progress-label { font: 0.97656vw Arial, sans-serif; }
+.campaigns-reference .campaign-card.horizontal .progress-label { font-size: 1.12305vw; }
+.campaigns-reference .campaign-card .progress { height: 0.83008vw; border: 0.04883vw solid #d3be95; background: #e7dfcb; }
+.campaigns-reference .campaign-card.horizontal .progress { height: 1.12305vw; }
+.campaigns-reference .progress i { background: #dfab32; }
+.campaigns-reference .progress.jade i { background: #76976a; }
+.campaigns-reference .prog-badge { width: 1.70898vw; height: 1.70898vw; font-size: 1.17188vw; margin-left: -1.07422vw; }
+.campaigns-reference .horizontal .prog-badge { width: 2.09961vw; height: 2.09961vw; font-size: 1.41602vw; margin-left: -1.36719vw; }
+.campaigns-reference .campaign-card.horizontal .fc-cta { margin-top: 1.66016vw; }
+.campaigns-reference .campaign-card .btn { font: 1.17188vw Arial, sans-serif; padding: 0.78125vw 1.26953vw; }
+.campaigns-reference .campaign-card.horizontal .btn { padding: 1.02539vw 2.14844vw; }
+.campaigns-reference .campaign-card:not(.horizontal) .art { height: 12.69531vw; aspect-ratio: auto; }
+.campaigns-reference .campaign-card:not(.horizontal) .art img { mask-image: linear-gradient(#000 65%, transparent); }
+.campaigns-reference .campaign-card:not(.horizontal) .art .tag { top: 1.17188vw; left: 1.07422vw; z-index: 2; }
+.campaigns-reference .campaign-card:not(.horizontal) .body { padding: 0.43945vw 1.26953vw 1.26953vw; gap: 0.97656vw; }
+.campaigns-reference .campaign-card:not(.horizontal) .h-sm { font: 400 1.90430vw/1.1 Georgia, serif; letter-spacing: -0.04883vw; }
+.campaigns-reference .campaign-card:not(.horizontal) .meta { font: 0.78125vw Arial, sans-serif; gap: 0.58594vw; flex-wrap: nowrap; }
+.campaigns-reference .campaign-card:not(.horizontal) .progress-label { font-size: 0.87891vw; }
+.campaigns-reference .campaign-card.ended { opacity: 1; filter: none; }
+.campaigns-reference .campaign-card.ended .btn { color: #817b70; border-color: #817b70; background: transparent; }
+
+}
+.campaigns-reference .campaign-card .art { background: transparent; }
+@media (min-width: 761px) {
+  .campaigns-reference .tab { clip-path: polygon(10% 0,90% 0,100% 30%,100% 70%,90% 100%,10% 100%,0 70%,0 30%); border-radius: 0; }
+  .campaigns-reference .campaign-card:not(.horizontal) .art img { object-fit: cover; }
+}
+@media (min-width: 761px) {
+  .campaigns-reference .camp-head-art { height: 18.55469vw; object-fit: fill; }
+  .campaigns-reference .campaign-card.horizontal .body { min-width: 0; }
+  .campaigns-reference .campaign-card.horizontal .meta { font-size: .72266vw; gap: .3418vw; }
+  .campaigns-reference .campaign-card:not(.horizontal) .meta { font-size: .72266vw; gap: .3418vw; }
+  .campaigns-reference .tab:not(.active) { clip-path: none; border: none; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 155 70' preserveAspectRatio='none'%3E%3Cpath d='M12 1H143L154 15V55L143 69H12L1 55V15Z' fill='none' stroke='%23b83020' stroke-width='1'/%3E%3C/svg%3E") center/100% 100% no-repeat; }
+}
+@media (min-width: 761px) {
+  .campaigns-reference .campaign-card.horizontal .h-md { font-family: 'Times New Roman', serif; font-size: 3.125vw; letter-spacing: -.09766vw; }
+}

@@ -7,17 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css"/>
+<link rel="stylesheet" href="assets/screens-reference.css"/>
 </head>
-<body>
+<body class=" reference-screen ref-campaign-joined">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <p class="theme-preview">Lunar New Year 2027 · Theme preview · Campaign details and scores are illustrative</p>
 <div class="page" id="main-content" tabindex="-1">
 
 <nav class="nav">
-  <a class="brand" href="index.html">
-    <svg class="seal"><use href="#seal-goat"/></svg>
-    <span>SAFRA PLAY<small>2027 · YEAR OF THE GOAT · 羊年大吉</small></span>
-  </a>
+  <a class="brand" href="index.html" aria-label="SAFRA Play home"><span class="ref-crop logo-crop" style="--x:53;--y:15;--w:359;--h:89"><img src="assets/references/campaign-joined.png" alt="SAFRA PLAY"/></span></a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="campaigns.html" class="active">My Campaigns</a>
@@ -33,12 +31,10 @@
 
 <div class="wrap">
   <section class="section" style="padding-bottom:40px">
-    <div class="grid responsive-grid" style="grid-template-columns:2fr 1fr;align-items:stretch">
+    <div class="grid responsive-grid campaign-top" style="grid-template-columns:2fr 1fr;align-items:stretch">
 
       <!-- campaign banner: full-width artwork from approved comp (text baked in) -->
-      <div class="banner-full">
-        <img src="assets/img/art-banner-joined.jpg" alt="Happy Lunar New Year 2027! Complete games, quizzes, and challenges across 4 waves to earn points and climb the leaderboard. 1 Aug 2026 – 14 Aug 2026 · 5 Waves · 15 Activities"/>
-      </div>
+      <div class="banner-full"><span class="ref-crop campaign-banner-art" style="--x:44;--y:118;--w:1348;--h:453"><img src="assets/references/campaign-joined.png" alt="Happy Lunar New Year 2027! Campaign banner"/></span></div>
 
       <!-- progress card -->
       <div class="card card-lift" style="display:flex;flex-direction:column;gap:16px">
@@ -52,12 +48,12 @@
         </div>
         <div class="stat-tiles">
           <div class="card stat-tile" style="box-shadow:none">
-            <span style="font-size:20px">🏆</span>
+            <span class="ref-crop stat-art" style="--x:1464;--y:331;--w:59;--h:57" aria-hidden="true"><img src="assets/references/campaign-joined.png" alt=""/></span>
             <div class="stat-big">0</div>
             <div class="stat-label">PTS · Total Score</div>
           </div>
           <div class="card stat-tile" style="box-shadow:none">
-            <span style="font-size:20px">🏅</span>
+            <span class="ref-crop stat-art" style="--x:1731;--y:330;--w:49;--h:60" aria-hidden="true"><img src="assets/references/campaign-joined.png" alt=""/></span>
             <div class="stat-big">#1</div>
             <div class="stat-label">of 1432 · Current Rank</div>
           </div>
@@ -66,7 +62,7 @@
     </div>
   </section>
 
-  <section class="responsive-grid" style="display:grid;grid-template-columns:2fr 1fr;gap:24px;padding-bottom:72px;align-items:start">
+  <section class="responsive-grid campaign-bottom" style="display:grid;grid-template-columns:2fr 1fr;gap:24px;padding-bottom:72px;align-items:start">
     <div>
       <div class="section-head">
         <h2 class="display h-md">Waves</h2>
@@ -113,7 +109,7 @@
         <p class="small" style="margin-top:6px">Clear each wave to unlock the next mission.</p>
       </div>
       <div class="card empty-state">
-        <img class="empty-img" src="assets/img/art-empty-goat.jpg" alt="Goat standing on a golden peak"/>
+        <span class="ref-crop campaign-empty-art" style="--x:1500;--y:665;--w:401;--h:259"><img src="assets/references/campaign-joined.png" alt="Goat standing on a golden peak"/></span>
         <h3 class="display h-sm">No Score Yet</h3>
         <p class="small" style="margin:8px 0 18px">Play Wave 1 to post your first score.</p>
         <a class="btn btn-primary btn-block" href="leaderboard.html">See Full Leaderboard&nbsp;→</a>

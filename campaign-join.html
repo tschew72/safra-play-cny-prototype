@@ -7,17 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css"/>
+<link rel="stylesheet" href="assets/screens-reference.css"/>
 </head>
-<body>
+<body class=" reference-screen ref-campaign-join">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <p class="theme-preview">Lunar New Year 2027 · Theme preview · Campaign details and scores are illustrative</p>
 <div class="page" id="main-content" tabindex="-1">
 
 <nav class="nav">
-  <a class="brand" href="index.html">
-    <svg class="seal"><use href="#seal-goat"/></svg>
-    <span>SAFRA PLAY<small>2027 · YEAR OF THE GOAT · 羊年大吉</small></span>
-  </a>
+  <a class="brand" href="index.html" aria-label="SAFRA Play home"><span class="ref-crop logo-crop" style="--x:40;--y:16;--w:341;--h:84"><img src="assets/references/campaign-join.png" alt="SAFRA PLAY"/></span></a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="campaigns.html" class="active">My Campaigns</a>
@@ -33,24 +31,22 @@
 
 <div class="wrap">
   <section class="section" style="padding-bottom:40px">
-    <div class="grid responsive-grid" style="grid-template-columns:2fr 1fr;align-items:stretch">
+    <div class="grid responsive-grid campaign-top" style="grid-template-columns:2fr 1fr;align-items:stretch">
 
       <!-- campaign banner: full-width artwork from approved comp (text baked in) -->
-      <div class="banner-full">
-        <img src="assets/img/art-banner-join.jpg" alt="Happy Lunar New Year 2027! Complete games, quizzes, and challenges across 4 waves to earn points and climb the leaderboard. 1 Aug 2026 – 14 Aug 2026 · 5 Waves · 15 Activities"/>
-      </div>
+      <div class="banner-full"><span class="ref-crop campaign-banner-art" style="--x:30;--y:132;--w:1389;--h:452"><img src="assets/references/campaign-join.png" alt="Happy Lunar New Year 2027! Campaign banner"/></span></div>
 
       <!-- join card -->
       <div class="card card-lift" style="display:flex;flex-direction:column;justify-content:center;gap:16px">
         <h3 class="display h-md">Join Campaign</h3>
         <p class="sub" style="font-size:15px">Join this campaign to start Wave Alpha, track your score, and climb the leaderboard.</p>
         <button class="btn btn-primary btn-block" data-join>Join Campaign</button>
-        <img src="assets/img/art-join-blossom.jpg" alt="" style="align-self:flex-end;width:130px;border-radius:10px;margin-top:-6px"/>
+        <span class="ref-crop join-blossom" style="--x:1840;--y:510;--w:175;--h:70"><img src="assets/references/campaign-join.png" alt=""/></span>
       </div>
     </div>
   </section>
 
-  <section class="responsive-grid" style="display:grid;grid-template-columns:2fr 1fr;gap:24px;padding-bottom:72px;align-items:start">
+  <section class="responsive-grid campaign-bottom" style="display:grid;grid-template-columns:2fr 1fr;gap:24px;padding-bottom:72px;align-items:start">
     <div>
       <div class="section-head">
         <h2 class="display h-md">Waves</h2>
@@ -60,31 +56,31 @@
         <div class="card wave-card locked">
           <div style="display:flex;justify-content:space-between;align-items:center"><span class="wave-num">01</span><span class="tag tag-grey">🔒 Locked</span></div>
           <h4>Wave 1 – The Call</h4>
-          <p>It begins with a decision to serve. Quiet resolve, first steps, and the start of purpose.</p>
+          <p>Answer the call and begin your journey.</p>
           <div class="wave-foot"><span>0 / 3 games completed</span><span>Join to unlock</span></div>
         </div>
         <div class="card wave-card locked">
           <div style="display:flex;justify-content:space-between;align-items:center"><span class="wave-num">02</span><span class="tag tag-grey">🔒 Locked</span></div>
           <h4>Wave 2 – The Bond</h4>
-          <p>Service is never carried alone. Shared effort, trust, and camaraderie define the experience.</p>
+          <p>Build trust, forge bonds, stand as one.</p>
           <div class="wave-foot"><span>0 / 3 games completed</span><span>Join to unlock</span></div>
         </div>
         <div class="card wave-card locked">
           <div style="display:flex;justify-content:space-between;align-items:center"><span class="wave-num">03</span><span class="tag tag-grey">🔒 Locked</span></div>
           <h4>Wave 3 – The Commitment Behind the Uniform</h4>
-          <p>A reflective wave about balancing service with family, work, studies, and everyday life.</p>
+          <p>Discover the dedication behind every duty.</p>
           <div class="wave-foot"><span>0 / 3 games completed</span><span>Join to unlock</span></div>
         </div>
         <div class="card wave-card locked">
           <div style="display:flex;justify-content:space-between;align-items:center"><span class="wave-num">04</span><span class="tag tag-grey">🔒 Locked</span></div>
           <h4>Wave 4 – The Nation Stands Together</h4>
-          <p>The final wave widens the lens to society, showing that appreciation for service is shared.</p>
+          <p>Unite hearts, protect what matters.</p>
           <div class="wave-foot"><span>0 / 3 games completed</span><span>Join to unlock</span></div>
         </div>
         <div class="card wave-card locked">
           <div style="display:flex;justify-content:space-between;align-items:center"><span class="wave-num">05</span><span class="tag tag-grey">🔒 Locked</span></div>
           <h4>Wave 5 – The Final Protocol</h4>
-          <p>The ultimate test of speed and precision. Every second counts as you race against time.</p>
+          <p>Complete the mission, secure the future.</p>
           <div class="wave-foot"><span>0 / 3 games completed</span><span>Join to unlock</span></div>
         </div>
       </div>
@@ -96,7 +92,7 @@
         <p class="small" style="margin-top:6px">Clear each wave to unlock the next mission.</p>
       </div>
       <div class="card empty-state">
-        <img class="empty-img" src="assets/img/art-empty-goat.jpg" alt="Goat standing on a golden peak"/>
+        <span class="ref-crop campaign-empty-art" style="--x:1510;--y:725;--w:440;--h:235"><img src="assets/references/campaign-join.png" alt="Goat standing on a golden peak"/></span>
         <h3 class="display h-sm">No Score Yet</h3>
         <p class="small" style="margin:8px 0 18px">Be the first to join and score!</p>
         <a class="btn btn-primary btn-block" href="leaderboard.html">See Full Leaderboard&nbsp;→</a>

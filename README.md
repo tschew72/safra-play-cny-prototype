@@ -8,13 +8,15 @@ Run `npm ci`, then `npm run dev -- --host 127.0.0.1`. Open the local address pri
 
 ## Design
 
-Rice-paper cream, vermilion actions, antique gold details and jade accents. Existing paper-cut goat, mountain, blossom and lantern artwork is retained. The 2027 home hero uses accessible HTML text and real links. Shared styling is in `assets/theme.css`; `design-system.html` documents the base palette, typography and components. All fifteen existing screens are included.
+Rice-paper cream, vermilion actions, antique gold details and jade accents. The thirteen supplied 2048 × 1152 references guide the desktop composition. Original PNGs are retained in `assets/references/`; CSS clips the logos, illustrated banners and decorative panels without altering the source images. Forms, navigation, filters, accordions, charts and game controls remain HTML/SVG. Some illustrated banners contain reference text; their links and accessible labels are supplied separately.
+
+`assets/screens-reference.css` contains the shared reference layouts and mobile adaptations. `assets/campaigns-reference.css` contains the campaign listing layout, and `assets/theme.css` supplies the base components. All fifteen existing pages remain available; thirteen have supplied screen references. Desktop layouts scale proportionally above 760px, while phones use stacked layouts.
 
 ## Integration boundary
 
 This repository is a visual and interaction prototype, not the production SAFRA application. Sign-in and OTP are simulated; campaign participation is local browser state; scores, dates, prize details and profile data are illustrative. Confirm campaign rules and connect the existing production authentication, APIs, consent and legal links before release. This push does not deploy to play.safra.sg.
 
-Apply the palette and components to the production templates, preserving its routes, validation and API behavior. The preview strip should be removed only when approved production content and services replace the sample data.
+Apply the palette and components to the production templates, preserving its routes, validation and API behavior. The reference screens omit the preview strip to follow the approved visual compositions. This does not change the simulated nature of their content or services.
 
 ## Verification
 
@@ -26,4 +28,4 @@ With the static site running at port 7102, open a Playwright CLI session and run
 
 [Phone preview](docs/mobile-preview.png)
 
-Validation completed on both the source site and production build: 30 page/viewport checks each, no horizontal page overflow, no broken images, no JavaScript exceptions, plus CTA, accordion and memory-card interaction checks. The inherited Vite 5 development toolchain reports two npm audit advisories; serve development previews on loopback only and update tooling before shared development hosting.
+The reference revision is checked in the in-app browser at 2048px and 390px. See `docs/reference-verification.md` for the latest checks and limits. The inherited Vite 5 development toolchain reports two npm audit advisories; serve development previews on loopback only and update tooling before shared development hosting.

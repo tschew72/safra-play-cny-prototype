@@ -7,17 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css"/>
+<link rel="stylesheet" href="assets/screens-reference.css"/>
 </head>
-<body>
+<body class=" reference-screen ref-index">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <p class="theme-preview">Lunar New Year 2027 · Theme preview · Campaign details and scores are illustrative</p>
 <div class="page" id="main-content" tabindex="-1">
 
 <nav class="nav">
-  <a class="brand" href="index.html">
-    <svg class="seal"><use href="#seal-goat"/></svg>
-    <span>SAFRA PLAY<small>2027 · YEAR OF THE GOAT · 羊年大吉</small></span>
-  </a>
+  <a class="brand" href="index.html" aria-label="SAFRA Play home"><span class="ref-crop logo-crop" style="--x:40;--y:16;--w:354;--h:75"><img src="assets/references/index.png" alt="SAFRA PLAY"/></span></a>
   <div class="nav-links">
     <a href="index.html" class="active">Home</a>
     <a href="campaigns.html">My Campaigns</a>
@@ -28,68 +26,16 @@
   <div class="nav-right"><a class="btn btn-primary" href="signin.html">Sign In</a></div>
 </nav>
 
-<section class="lunar-hero" aria-labelledby="lunar-title">
-  <div class="lunar-copy">
-    <p class="eyebrow">Lunar New Year 2027 <span aria-hidden="true">／</span> 羊年大吉</p>
-    <h1 class="display" id="lunar-title">A new year.<br/>New heights.<br/><em>Let’s play.</em></h1>
-    <p class="lunar-intro">Celebrate the Year of the Goat with a little friendly competition. Play, learn and climb together.</p>
-    <div class="lunar-actions"><a class="btn btn-primary" href="signin.html">Play Now, It’s Free <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#how">See How It Works</a></div>
-    <p class="lunar-note">Thank you, NSmen. Here’s to an auspicious year.</p>
-  </div>
-  <img class="lunar-art" src="assets/img/art-home-hero.jpg" alt="Paper-cut white goat on jade and gold mountain peaks, with a red sun and plum blossoms" fetchpriority="high"/>
-</section>
-
+<section class="home-hero" aria-labelledby="home-title"><span class="ref-crop " style="--x:0;--y:104;--w:2048;--h:602"><img src="assets/references/index.png" alt="Goat on jade and gold mountain peaks beneath a red sun and plum blossoms"/></span>
+<span class="ref-crop mobile-home-art" style="--x:1000;--y:104;--w:1048;--h:602" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><h1 id="home-title" class="sr-only">Thank you, NSmen. Now it’s game time.</h1>
+<a class="hotspot" href="signin.html" aria-label="Play Now, It’s Free" style="left:6.8%;top:78%;width:14.8%;height:12%"></a>
+<a class="hotspot" href="#how" aria-label="See How It Works" style="left:23%;top:78%;width:14%;height:12%"></a></section>
 <div class="wrap">
 
-  <!-- COUNTDOWN + PRIZE -->
-  <section style="padding-bottom:72px">
-    <div class="card count-strip" data-countdown="2027-02-06T09:00:00+08:00">
-      <div style="display:flex;align-items:center;gap:14px">
-        <svg width="40" height="40" viewBox="0 0 48 48"><use href="#blossom" style="color:#C13A2A"/></svg>
-        <div><strong class="display" style="font-size:19px">Campaign Ends In</strong><br/><span class="small">Standings final 0900 hrs, 6 Feb 2027</span></div>
-      </div>
-      <div class="count-tiles" style="justify-content:center">
-        <div class="count-tile"><div class="n" data-cd="d">29</div><div class="l">Days</div></div>
-        <div class="count-tile"><div class="n" data-cd="h">14</div><div class="l">Hours</div></div>
-        <div class="count-tile"><div class="n" data-cd="m">37</div><div class="l">Mins</div></div>
-        <div class="count-tile"><div class="n" data-cd="s">08</div><div class="l">Secs</div></div>
-      </div>
-      <div class="prize-card">
-        <div class="prize-icon">🏆</div>
-        <div style="flex:1">
-          <strong class="display" style="font-size:19px">iPhone 17 Pro</strong>
-          <p class="small">Top Prize — Leaderboard Champion</p>
-        </div>
-        <a class="btn btn-primary" href="signin.html">Join Now&nbsp;›</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="section" id="how" style="padding-top:24px">
-    <div class="section-head" style="text-align:center">
-      <p class="eyebrow">Three Steps to the Peak</p>
-      <h2 class="display h-lg">How It Works</h2>
-    </div>
-    <div class="steps">
-      <div class="card step-card">
-        <div class="step-num">1</div>
-        <h3 class="display h-sm" style="margin-bottom:8px">Sign Up Free</h3>
-        <p class="sub" style="font-size:15px">Register with your email and verify with a one-time password.</p>
-      </div>
-      <div class="card step-card">
-        <div class="step-num">2</div>
-        <h3 class="display h-sm" style="margin-bottom:8px">Play &amp; Learn</h3>
-        <p class="sub" style="font-size:15px">Take on mini-games and quizzes inspired by NS and Singapore&rsquo;s defence.</p>
-      </div>
-      <div class="card step-card">
-        <div class="step-num">3</div>
-        <h3 class="display h-sm" style="margin-bottom:8px">Score &amp; Win</h3>
-        <p class="sub" style="font-size:15px">Score points, climb the leaderboard — Top 30 wins prizes.</p>
-      </div>
-    </div>
-  </section>
-
+<section class="home-count-row">
+<div class="home-count card"><span class="ref-crop calendar-art" style="--x:137;--y:752;--w:90;--h:89" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><h2>Campaign<br/>Ends In</h2><div class="count-tiles"><div class="count-tile"><div class="n">29</div><div class="l">Days</div></div><div class="count-tile"><div class="n">14</div><div class="l">Hours</div></div><div class="count-tile"><div class="n">37</div><div class="l">Mins</div></div><div class="count-tile"><div class="n">08</div><div class="l">Secs</div></div></div></div>
+<div class="home-prize card"><span class="ref-crop phone-art" style="--x:1191;--y:732;--w:136;--h:170"><img src="assets/references/index.png" alt="iPhone 17 Pro prize illustration"/></span><div><h2>iPhone 17 Pro —<br/>Top Prize, Leaderboard Champion</h2><a class="btn btn-primary" href="signin.html">Join Now　›</a></div></div>
+</section><section class="home-how" id="how"><h2 class="display">How It Works</h2><div class="steps"><div class="card step-card"><span class="step-num">1</span><span class="ref-crop step-art" style="--x:262;--y:1038;--w:64;--h:71" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><div><h3>Sign Up Free</h3><p>Create your account in seconds. It’s fast and free.</p></div></div><div class="card step-card"><span class="step-num">2</span><span class="ref-crop step-art" style="--x:893;--y:1041;--w:67;--h:64" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><div><h3>Play & Learn</h3><p>Take on quiz challenges and learn something new.</p></div></div><div class="card step-card"><span class="step-num">3</span><span class="ref-crop step-art" style="--x:1488;--y:1041;--w:67;--h:68" aria-hidden="true"><img src="assets/references/index.png" alt=""/></span><div><h3>Score & Win</h3><p>Climb the leaderboard and win amazing prizes.</p></div></div></div></section>
   <!-- ACTIVE CAMPAIGNS PREVIEW -->
   <section class="section" style="padding-top:24px">
     <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end">

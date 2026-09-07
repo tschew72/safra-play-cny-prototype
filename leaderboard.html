@@ -7,17 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css"/>
+<link rel="stylesheet" href="assets/screens-reference.css"/>
 </head>
-<body>
+<body class=" reference-screen ref-leaderboard">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <p class="theme-preview">Lunar New Year 2027 · Theme preview · Campaign details and scores are illustrative</p>
 <div class="page" id="main-content" tabindex="-1">
 
 <nav class="nav">
-  <a class="brand" href="index.html">
-    <svg class="seal"><use href="#seal-goat"/></svg>
-    <span>SAFRA PLAY<small>2027 · YEAR OF THE GOAT · 羊年大吉</small></span>
-  </a>
+  <a class="brand" href="index.html" aria-label="SAFRA Play home"><span class="ref-crop logo-crop" style="--x:40;--y:10;--w:356;--h:84"><img src="assets/references/leaderboard.png" alt="SAFRA PLAY"/></span></a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="campaigns.html">My Campaigns</a>
@@ -36,12 +34,10 @@
   </section>
 
   <section style="padding-bottom:48px">
-    <div class="card podium-art card-lift">
-      <img src="assets/img/art-podium-peaks.jpg" alt="Podium peaks — Wei_Liang 12,480 pts, Cheryl T. 11,905 pts, Ahmad R. 11,340 pts"/>
-    </div>
+    <div class="podium-art"><span class="ref-crop podium-scene" style="--x:0;--y:293;--w:2048;--h:400"><img src="assets/references/leaderboard.png" alt="Podium: Cheryl T. 11,905 points; Wei_Liang 12,480 points; Ahmad R. 11,340 points"/></span></div>
   </section>
 
-  <section class="responsive-grid" style="display:grid;grid-template-columns:1.8fr 1fr;gap:24px;padding-bottom:72px;align-items:start">
+  <section class="responsive-grid leaderboard-bottom" style="display:grid;grid-template-columns:1.8fr 1fr;gap:24px;padding-bottom:72px;align-items:start">
     <div class="card table-card standings-table">
       <div class="trow head"><span>Rank</span><span>Player</span><span>Campaigns Played</span><span style="text-align:right">Points</span></div>
       <div class="trow"><span class="rank">4</span><span><span class="mini-avatar">D</span><strong>Daniel Ng</strong></span><span class="small">18</span><span class="pts">10,210 pts</span></div>

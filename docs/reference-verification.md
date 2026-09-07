@@ -1,0 +1,31 @@
+# Reference screen verification — 7 September 2026
+
+The thirteen supplied references are mapped to home, campaigns, campaign join,
+campaign joined, leaderboard, profile, FAQ, sign-in, wave 1, quiz, game intro,
+round briefing and memory match. Original images are preserved in assets/references.
+
+## Fresh verification
+
+- Production build: `npm run build` passed.
+- Whitespace/conflict check: `git diff --check` passed.
+- In-app browser: all 13 reference routes at 2048 × 1152 and 390 × 844,
+  plus all 15 routes at 1440 × 900; no horizontal page overflow or failed images.
+- Browser error/warning log returned no entries during the interaction checks.
+- Campaign filter: Ended hides both active cards; All Campaigns restores them.
+- FAQ: opening Price closes Prize and updates aria-expanded correctly.
+- Join Campaign opens the joined screen; Start opens Wave 1.
+- Three correct quiz answers reach Briefing Complete and unlock Memory Match.
+- Story Next updates the page count and reaches Guided Recall after four slides.
+- Play Now reaches a 16-card board; a card click flips it.
+- Home Play Now reaches sign-in; email, consent checkboxes and six code fields
+  can be used, and the simulated Verify action returns home.
+
+## Scope and visual limits
+
+These are functional reference-based layouts, not a claim of pixel identity.
+Typography, paper texture and some decorative borders are browser-rendered
+approximations. Mobile layouts reflow the desktop compositions. The initial
+memory board starts face-down; the reference depicts cards during play.
+Illustrated banners retain the reference's baked-in copy and sample dates.
+Profile, standings, authentication and prizes remain prototype content;
+no production SAFRA services are connected or deployed by this revision.

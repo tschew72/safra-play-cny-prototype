@@ -15,7 +15,7 @@ async page => {
  await page.getByRole('link',{name:'Play Now, It’s Free'}).click();
  if(!page.url().endsWith('/signin.html')) failures.push('Home CTA failed');
  await page.goto(base+'/faq.html');
- await page.locator('.acc-q').first().click();
+ await page.locator('.acc-q').nth(1).click();
  if(!await page.locator('.acc-item.open .acc-a').first().isVisible()) failures.push('FAQ failed');
  await page.goto(base+'/memory-match.html');
  if(await page.locator('.mm-card').count()===0) failures.push('Memory cards missing');

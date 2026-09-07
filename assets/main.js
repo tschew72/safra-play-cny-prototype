@@ -98,6 +98,7 @@
     const wasOpen = item.classList.contains('open');
     $$('.acc-item.open').forEach((i) => i.classList.remove('open'));
     if (!wasOpen) item.classList.add('open');
+    $$('.acc-q').forEach((q) => q.setAttribute('aria-expanded', String(q.closest('.acc-item').classList.contains('open'))));
   }));
 
   /* ---------- Tabs (cosmetic filter) ---------- */

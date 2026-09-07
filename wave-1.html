@@ -7,15 +7,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css"/>
+<link rel="stylesheet" href="assets/screens-reference.css"/>
 </head>
-<body data-page="wave">
+<body data-page="wave" class=" reference-screen ref-wave-1">
 <div class="page" id="main-content" tabindex="-1">
 
 <nav class="nav">
-  <a class="brand" href="index.html">
-    <svg class="seal"><use href="#seal-goat"/></svg>
-    <span>SAFRA PLAY<small>2027 · YEAR OF THE GOAT · 羊年大吉</small></span>
-  </a>
+  <a class="brand" href="index.html" aria-label="SAFRA Play home"><span class="ref-crop logo-crop" style="--x:42;--y:17;--w:375;--h:98"><img src="assets/references/wave-1.png" alt="SAFRA PLAY"/></span></a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="campaigns.html" class="active">My Campaigns</a>
@@ -32,12 +30,12 @@
 <div class="wrap">
   <section class="section" style="padding-bottom:32px">
     <!-- wave banner: full-width artwork from approved comp (text baked in); hotspot keeps back-link clickable -->
-    <div class="wave-banner" role="img" aria-label="Wave 1 — It begins with a decision to serve. Quiet resolve, first steps, and the start of purpose.">
-      <a class="hotspot" style="left:1.5%;top:2%;width:11%;height:18%" href="campaign-joined.html" aria-label="Back to Campaign"></a>
+    <div class="wave-banner exact-wave-banner" role="img" aria-label="Wave 1 — It begins with a decision to serve. Quiet resolve, first steps, and the start of purpose.">
+      <span class="ref-crop wave-crop" style="--x:57;--y:144;--w:1934;--h:344"><img src="assets/references/wave-1.png" alt=""/></span><a class="hotspot" style="left:1.5%;top:2%;width:11%;height:18%" href="campaign-joined.html" aria-label="Back to Campaign"></a>
     </div>
   </section>
 
-  <section style="padding-bottom:40px">
+  <section class="wave-brief-section" style="padding-bottom:40px">
     <div class="card card-lift" data-briefing style="display:flex;flex-direction:column;gap:18px">
       <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
         <div style="width:72px;height:72px;border-radius:14px;background:var(--vermilion);display:flex;align-items:center;justify-content:center;flex:none">
@@ -55,16 +53,14 @@
     </div>
   </section>
 
-  <section style="padding-bottom:72px">
+  <section class="wave-games-section" style="padding-bottom:72px">
     <div class="section-head">
       <h2 class="display h-md" data-games-title>Games Locked</h2>
     </div>
     <div class="game-cards">
       <div class="card game-card" data-game="memory" style="flex-direction:column">
         <div style="display:flex;gap:18px;align-items:flex-start">
-          <div class="g-icon">
-            <svg width="44" height="44" viewBox="0 0 44 44"><rect x="4" y="8" width="16" height="22" rx="4" fill="#C13A2A"/><rect x="24" y="14" width="16" height="22" rx="4" fill="#C9A24B"/><use href="#goat" x="6" y="12" width="12" height="11" fill="#F3D9A8"/></svg>
-          </div>
+          <div class="g-icon"><span class="ref-crop game-icon-crop" style="--x:190;--y:849;--w:228;--h:183"><img src="assets/references/wave-1.png" alt=""/></span></div>
           <div>
             <span class="tag tag-jade" style="margin-bottom:8px">Easy</span>
             <h4>Memory Match</h4>
@@ -75,9 +71,7 @@
       </div>
       <div class="card game-card" style="flex-direction:column">
         <div style="display:flex;gap:18px;align-items:flex-start">
-          <div class="g-icon">
-            <svg width="44" height="44" viewBox="0 0 44 44"><rect x="4" y="4" width="16" height="16" rx="3" fill="#C13A2A"/><rect x="24" y="4" width="16" height="16" rx="3" fill="#C9A24B"/><rect x="4" y="24" width="16" height="16" rx="3" fill="#4E7E62"/><rect x="24" y="24" width="16" height="16" rx="3" fill="#C9A24B"/></svg>
-          </div>
+          <div class="g-icon"><span class="ref-crop game-icon-crop" style="--x:787;--y:857;--w:198;--h:178"><img src="assets/references/wave-1.png" alt=""/></span></div>
           <div>
             <span class="tag tag-jade" style="margin-bottom:8px">Easy</span>
             <h4>Tile Match</h4>
@@ -88,9 +82,7 @@
       </div>
       <div class="card game-card" style="flex-direction:column">
         <div style="display:flex;gap:18px;align-items:flex-start">
-          <div class="g-icon">
-            <svg width="44" height="44" viewBox="0 0 44 44"><rect x="4" y="6" width="14" height="14" rx="3" fill="#C13A2A" transform="rotate(-8 11 13)"/><rect x="22" y="4" width="14" height="14" rx="3" fill="#C9A24B" transform="rotate(6 29 11)"/><rect x="12" y="22" width="14" height="14" rx="3" fill="#4E7E62" transform="rotate(-4 19 29)"/><text x="10" y="17" font-size="10" fill="#F3D9A8" font-weight="700" transform="rotate(-8 11 13)">N</text><text x="27" y="15" font-size="10" fill="#FAF4E8" font-weight="700" transform="rotate(6 29 11)">S</text><text x="17" y="33" font-size="10" fill="#FAF4E8" font-weight="700" transform="rotate(-4 19 29)">F</text></svg>
-          </div>
+          <div class="g-icon"><span class="ref-crop game-icon-crop" style="--x:1354;--y:849;--w:222;--h:195"><img src="assets/references/wave-1.png" alt=""/></span></div>
           <div>
             <span class="tag tag-jade" style="margin-bottom:8px">Easy</span>
             <h4>Word Scrambler</h4>

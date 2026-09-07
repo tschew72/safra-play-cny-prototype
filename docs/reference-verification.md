@@ -39,3 +39,11 @@ Verified the built home page at 390, 986, 1440 and 2048 pixels: no page overflow
 failed images or browser warnings/errors; podium artwork matches its container
 width. Full Leaderboard and Open Prize Wallet navigate to the expected pages.
 Production build and whitespace checks passed.
+
+### Home FAQ and festive invitation — 7 September 2026
+
+- Matched the FAQ reference with its goat and blossom artwork, an illustrated introduction, red category labels, gold rules, and an initially expanded prize answer.
+- Replaced the generic CTA clouds with reference blossom, cloud, firework, and jade mountain artwork while keeping the heading and sign-in action as HTML.
+- Checked rendered layouts at 390, 986, and 1440 pixels wide. No horizontal overflow or failed images; no browser errors or warnings in the final review.
+- Confirmed the Price question opens and closes the Prize answer, with matching aria-expanded values. View All FAQs opens faq.html; Sign In Free opens signin.html.
+- Production build passed. Desktop evidence: home-faq-banner-preview.png.

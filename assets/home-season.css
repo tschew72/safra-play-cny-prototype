@@ -90,3 +90,57 @@
 .ref-index .page>.wrap { padding-left:20px; padding-right:20px; }
 .home-podium-art { --u:calc(100cqw / 2048); }
 }
+
+/* The home FAQ and invitation share the illustrated FAQ reference. */
+.home-faq { display:grid; grid-template-columns:34% 1fr; gap:clamp(24px,3vw,56px); align-items:center; }
+.home-faq-intro { container-type:inline-size; }
+.home-faq-intro>.eyebrow { margin:0 20px 16px; }
+.home-faq-intro>h2 { font-size:clamp(38px,4.4vw,78px); line-height:1.03; font-weight:400; margin:0 20px; }
+.home-faq-art { --u:calc(100cqw / 666); margin-top:12px; mix-blend-mode:multiply; }
+.home-faq-panel { background:rgba(255,252,246,.8); border:1px solid #e6cfab; border-radius:16px; padding:12px clamp(20px,2.4vw,44px); box-shadow:0 5px 16px #68451a12; }
+.home-faq .acc-item { padding:26px 0; border-color:#dfbd78; }
+.home-faq .acc-q { gap:18px; text-align:left; }
+.home-faq .acc-q .tag { width:62px; padding:0; background:none; color:#bd2b18; font:600 12px Arial,sans-serif; letter-spacing:.12em; justify-content:flex-start; }
+.home-faq .acc-q .txt { font:400 clamp(23px,2.1vw,36px)/1.2 'Times New Roman',serif; }
+.home-faq .acc-q .pm { flex:none; width:32px; height:32px; font-size:0; transform:none; }
+.home-faq .acc-q .pm::before { content:'+'; font:300 25px Arial,sans-serif; }
+.home-faq .acc-item.open .pm::before { content:'−'; }
+.home-faq .acc-a { padding:16px 44px 0 80px; font-size:clamp(15px,1.2vw,20px); line-height:1.65; }
+.home-faq-more { display:flex; justify-content:space-between; padding:24px 0; color:#9b701f; font-weight:600; }
+.home-festive-cta { position:relative; overflow:hidden; isolation:isolate; border-radius:18px; background:linear-gradient(100deg,#c93a21,#d4492d 50%,#b82c1b); min-height:230px; margin:0 0 48px; display:grid; place-items:center; scroll-margin-top:100px; border:1px solid #c1833e; }
+.festive-copy { position:relative; z-index:1; text-align:center; padding:30px 16px; }
+.festive-copy .eyebrow { color:#f4d69b; }
+.festive-copy h2 { color:#fff5df; font-size:clamp(32px,3.4vw,60px); line-height:1.12; font-weight:400; margin:8px 0 20px; }
+.festive-copy .btn { min-width:185px; gap:24px; color:#442613; box-shadow:0 4px 10px #6e190b26; }
+.festive-art { position:absolute; bottom:0; --u:clamp(.65px,.055vw,1.1px); pointer-events:none; z-index:0; }
+.festive-art-left { left:0; mask-image:linear-gradient(to right,#000 50%,transparent),linear-gradient(to top,#000 65%,transparent); mask-composite:intersect; }
+.festive-art-right { right:0; mask-image:linear-gradient(to left,#000 65%,transparent),linear-gradient(to top,#000 65%,transparent); mask-composite:intersect; }
+@media(max-width:760px) {
+ .home-faq { grid-template-columns:1fr; gap:16px; scroll-margin-top:140px; }
+ .home-faq-intro { position:relative; min-height:230px; padding-bottom:18px; }
+ .home-faq-intro>.eyebrow,.home-faq-intro>h2 { margin-left:0; position:relative; z-index:1; max-width:65%; }
+ .home-faq-intro>h2 { font-size:42px; }
+ .home-faq-art { position:absolute; right:-15px; bottom:0; --u:.36px; opacity:.8; mask-image:linear-gradient(to right,transparent,#000 40%); }
+ .home-faq-panel { padding:4px 20px; }
+ .home-faq .acc-q { flex-wrap:wrap; gap:8px; position:relative; padding-right:36px; }
+ .home-faq .acc-q .tag { width:100%; }
+ .home-faq .acc-q .txt { font-size:25px; }
+ .home-faq .acc-q .pm { position:absolute; right:0; top:50%; transform:translateY(-50%); }
+ .home-faq .acc-a { padding:14px 0 0; }
+ .home-festive-cta { min-height:290px; }
+ .festive-copy { padding:24px 20px 64px; }
+ .festive-copy h2 { font-size:36px; }
+ .festive-art { --u:.46px; }
+ .festive-art-left { left:-35px; }
+ .festive-art-right { right:-30px; }
+}
+.ref-index .festive-art { position:absolute; }
+.ref-index .home-faq-art { mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 92%,transparent); }
+@media(max-width:760px) {
+ .ref-index .home-faq-art { position:absolute; mask-image:linear-gradient(to right,transparent,#000 45%); }
+}
+@media(max-width:760px) {
+ .home-faq-intro { min-height:0; padding-bottom:0; }
+ .home-faq-intro>.eyebrow,.home-faq-intro>h2 { max-width:100%; }
+ .ref-index .home-faq-art { position:relative; right:auto; --u:calc(100cqw / 666); opacity:1; mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 92%,transparent); }
+}

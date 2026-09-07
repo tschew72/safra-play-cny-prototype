@@ -44,9 +44,9 @@
 .redemption-note { font-size:12px; color:var(--ink-soft); margin-top:16px; }
 /* Prevent the old 1100px breakpoint from turning campaign art into full-page panels. */
 @media(min-width:761px) {
-.ref-index .home-campaigns .campaign-grid { grid-template-columns:1.65fr 1fr 1fr; gap:18px; }
+.ref-index .home-campaigns .campaign-grid { grid-template-columns:2.4fr 1fr 1fr; gap:18px; }
 .ref-index .home-campaigns .campaign-card { min-width:0; height:auto; }
-.ref-index .home-campaigns .campaign-card.horizontal { flex-direction:column; }
+.ref-index .home-campaigns .campaign-card.horizontal { flex-direction:row; }
 .ref-index .home-campaigns .campaign-card .art,.ref-index .home-campaigns .campaign-card.horizontal .art { width:100%; height:clamp(145px,15vw,260px); aspect-ratio:auto; }
 .ref-index .home-campaigns .campaign-card .art img { width:100%; height:100%; object-fit:cover; }
 .ref-index .home-campaigns .campaign-card .body,.ref-index .home-campaigns .campaign-card.horizontal .body { width:100%; padding:20px; gap:14px; }
@@ -143,4 +143,29 @@
  .home-faq-intro { min-height:0; padding-bottom:0; }
  .home-faq-intro>.eyebrow,.home-faq-intro>h2 { max-width:100%; }
  .ref-index .home-faq-art { position:relative; right:auto; --u:calc(100cqw / 666); opacity:1; mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 92%,transparent); }
+}
+
+/* Keep the portrait artwork intact, as in the campaign reference. */
+.ref-index .home-campaigns .campaign-card.horizontal .art { width:44%; height:auto; max-height:none; aspect-ratio:405 / 533; margin:0; border-radius:0; align-self:center; background:transparent; }
+.ref-index .home-campaigns .campaign-card.horizontal .art img { width:100%; height:auto; object-fit:contain; display:block; }
+.ref-index .home-campaigns .campaign-card.horizontal .body { min-width:0; width:auto; padding:20px 16px; }
+.ref-index .home-campaigns .campaign-card.horizontal .body>.tag { margin-bottom:0; }
+.ref-index .home-campaigns .campaign-card.horizontal .meta { margin-top:0; }
+.ref-index .home-campaigns .campaign-card .art { background:var(--paper); }
+@media(max-width:760px) {
+ .ref-index .home-campaigns .campaign-card.horizontal { flex-direction:column; }
+ .ref-index .home-campaigns .campaign-card.horizontal .art { width:100%; }
+ .ref-index .home-campaigns .campaign-card.horizontal .body { width:100%; padding:24px; }
+}
+.ref-index .home-campaigns { scroll-margin-top:100px; }
+.ref-index .home-campaigns .campaign-card.horizontal .art { mask-image:linear-gradient(to right,#000 88%,transparent); }
+@media(max-width:760px) {
+ .ref-index .home-campaigns { scroll-margin-top:140px; }
+ .ref-index .home-campaigns .campaign-card.horizontal .art { mask-image:none; }
+}
+.ref-index .home-campaigns .campaign-card.horizontal .body h3 { font-size:clamp(24px,2.9vw,54px); }
+@media(max-width:760px) {
+ .ref-index .home-campaigns .section-head { flex-direction:column; align-items:flex-start!important; gap:12px; }
+ .ref-index .home-campaigns .section-head>.link-arrow { white-space:nowrap; }
+ .ref-index .home-campaigns .campaign-card.horizontal .body h3 { font-size:30px; }
 }

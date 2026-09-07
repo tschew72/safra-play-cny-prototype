@@ -47,3 +47,10 @@ Production build and whitespace checks passed.
 - Checked rendered layouts at 390, 986, and 1440 pixels wide. No horizontal overflow or failed images; no browser errors or warnings in the final review.
 - Confirmed the Price question opens and closes the Prize answer, with matching aria-expanded values. View All FAQs opens faq.html; Sign In Free opens signin.html.
 - Production build passed. Desktop evidence: home-faq-banner-preview.png.
+
+### Home campaign artwork correction — 7 September 2026
+
+- Root cause: a portrait image was forced into a shallow landscape slot with object-fit: cover, cutting off the goat's head.
+- Restored the featured card's desktop side-by-side layout, larger heading, and full portrait aspect ratio. Mobile shows the complete illustration above the content.
+- Reviewed 986px and 1440px desktop layouts and 390px mobile; verified original 405:533 image proportions and no horizontal overflow. Confirmed the featured card opens campaign-join.html. Final mobile browser logs contain no warnings or errors.
+- Production build and git diff --check passed. Evidence: home-campaign-art-preview.png.
